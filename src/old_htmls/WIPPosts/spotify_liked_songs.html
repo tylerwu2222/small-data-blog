@@ -1,0 +1,44 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<!-- <script data-main="{{url_for('static', filename='js/blog/spotify_liked_songs/spotify_liked_songs.js')}}" src="{{url_for('static', filename='js/modules/require.js')}}"></script> -->
+<!-- <script src="{{url_for('static', filename='js/modules/require.js')}}"></script> -->
+<script type="module" src="{{url_for('static', filename='js/blog/spotify_liked_songs/spotify_liked_songs.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <p style="white-space: pre-line;"></p>
+    <!-- <div class="mb-3">
+        <label for="clientId" class="form-label">Client ID</label>
+        <input type="text" class="form-control" id="clientId" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="clientSecret" class="form-label">Client Secret</label>
+        <input type="text" class="form-control" id="clientSecret" placeholder="">
+    </div> -->
+    <div id="login">
+        <p>Login to Spotify to get this started:</p>
+        <a>Log in</a>
+    </div>
+    <div id="stats-menu1">
+    </div> 
+    <svg id="stat-svg1">
+    </svg>
+    <svg id="stat-svg2">
+    </svg>
+</div>
+{% endblock %}

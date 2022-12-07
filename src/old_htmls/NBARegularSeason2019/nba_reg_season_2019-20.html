@@ -1,0 +1,64 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/theneedledrop/the_needledrop_2021.js')}}"></script>
+<script  type="module" src="{{url_for('static', filename='js/blog/nba_reg_19/WL_viz_21.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">Basketball-Reference.com</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">NBA 2019-20 Regular Season Data</a>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/WL_viz.css') }}">
+<script src="https://unpkg.com/d3@6.6.0/dist/d3.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+<div class="post-content">
+<p>A Visual Recap of the 2019-20 regular season:
+</p>
+<h2 id="section1" class="pres-header">Regular Season W-L Bar Chart Race</h2>
+<div class="row display-row">
+    <div class="col-4">
+        <span id="splits-menu">
+        </span> 
+        <span id="speed-btns">
+        </span>
+    </div>
+    <div class="col-8">
+       <span id="notes-display"></span>
+       <svg id="svg-skip"></svg>
+    </div>
+</div>
+<div id="chart1">
+    <svg id="svg-reg">
+        <g id="main-g"></g>
+    </svg>
+</div>
+<h2 id="section1" class="pres-header">Static Regular Season W-L</h2>
+
+<div id="chart2">
+    <svg id="svg-reg2">
+        <g id="main-g2"></g>
+    </svg>
+</div>
+</div>
+{% endblock %}
+
+<!-- The Bubble Suns could extend their 8-win run from Orlando, 
+    the Jazz and Bucks could again establish themselves as the regular season powerhouses they were last season, and the Timberwolves could look to make the playoffs this year.
+    Some of these hopes came true, and some slowly faded away from the realm of probabilistic reality. -->

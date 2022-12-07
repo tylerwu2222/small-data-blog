@@ -1,0 +1,63 @@
+:root {
+	--color-green: #74a056;
+    --color-dark-green: #597a43;
+	--color-blue: #537c9d;
+    --color-tan: antiquewhite;
+}
+
+/* body,  */
+#berkeley-nature-div,
+.navbar,
+.container-narrow-green-bg{
+    background-color: var(--color-green);
+    color: var(--color-tan);
+}
+.container-narrow-green-bg {
+    float: left;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5vh;
+}
+
+.nav-brand,
+.nav-link{
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.brand-text,
+.nav-brand,
+.navbar-nav>li>a,
+.scrollspy-link,
+.footer-link{
+    color: var(--color-tan);
+}
+
+.scrollspy-link,
+.nav-link{
+    transition: background-color 1s ease-out 100ms
+}
+.scrollspy-link:hover,
+.navbar-nav>li>a:hover{
+	color: var(--color-tan);
+	background-color: var(--color-dark-green);
+}
+
+/* image dimensions */
+.post-main-img-large{
+    display: block;
+    /* border-radius: 20px; */
+    /* width: 40vw; */
+    max-height: 90vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-wide {
+    position: relative;
+    max-width:100%;
+    /* padding-right: 20%; */
+    /* padding-top: 5vh; */
+}

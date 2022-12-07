@@ -1,0 +1,34 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/blog/nba_trades_21/nba_trades_21.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">Basketball-Reference.com</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">NBA Trade Data</a>
+{% endblock %}
+
+<div class="container">
+    <p style="white-space: pre-line;">
+    <h2 id="section1" class="pres-header">Trade Chord Diagram</h2>
+    <div id="stats-menu1">
+    </div> 
+    <svg id="stat-svg1">
+    </svg>
+    <svg id="stat-svg2">
+    </svg>

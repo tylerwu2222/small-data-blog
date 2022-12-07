@@ -1,0 +1,65 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/blog/.js')}}"></script>
+<script type="module" src="{{url_for('static', filename='js/blog/berkeley_nature/berkeley_nature.js')}}"></script>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/blog_posts/berkeley_nature.css') }}">
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">_</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">_</a>
+{% endblock %}
+
+{% block scrollspy %}
+<nav id="article-scrollspy" class="navbar scrollspy-navbar">
+    <nav class="nav nav-pills flex-column">
+            <a class="scrollspy-link" href="#section1">S1</a>
+            <a class="scrollspy-link" href="#section2">S2</a>
+    </nav>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="scrollspy-div" data-spy="scroll" data-target="#article-scrollspy" data-offset="0">
+    <p style="white-space: pre-line;"></p>
+    <p>want this to be exploratory (of the bay area), but also informative about the things I discover. Like why pi</p>
+    <h2 id="section1" class="pres-header">The Marina</h2>
+    <p>Things I could capture:</p>
+    <ul>
+        <li>some birds</li>
+        <li>some well-fed squirrels</li>
+        <li>trees, waves, the WIND</li>
+        <li>apparently there's a kite-flying park (Cesar Chavez park)</li>
+    </ul>
+    <h2 id="section2" class="pres-header">The Botanical Garden</h2>
+    <p>Things I could capture:</p>
+    <ul>
+        <li>some fruit</li>
+        <li>some flowers (in Spring)</li>
+        <li>the houses (tropical, carnivorous) they close at 4pm</li>
+    </ul>
+    <h2 id="section2" class="pres-header">The hikes</h2>
+    <p>Potential vis ideas: an unwinding trail - - -</p>
+    <p>Add AR (Artvive) to trailhead signs?</p>
+    <h2 id="section2" class="pres-header">SF Garden?</h2>
+    <p>It's pretty huge, but they also have a flower garden, with lots of people.</p>
+    
+
+
+</div>
+{% endblock %}

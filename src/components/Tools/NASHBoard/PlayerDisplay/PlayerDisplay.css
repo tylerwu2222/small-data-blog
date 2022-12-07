@@ -1,0 +1,8 @@
+.player-display-div{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+.displayed-player-img{
+    max-width: 20vw;
+}

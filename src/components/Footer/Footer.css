@@ -1,0 +1,16 @@
+/** FOOTER **/
+.footer{
+	position: fixed;
+	/* vertical-align: middle; */
+	/* flex-shrink: 0; */
+	top: 95vh; 
+	left: 2vw;
+}
+.footer-link{
+	color: var(--sdb-color);
+	text-decoration: none;
+}
+.footer-icon{
+	padding: 0px 3px;
+	/* height: auto; */
+}

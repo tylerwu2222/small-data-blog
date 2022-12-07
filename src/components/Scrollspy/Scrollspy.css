@@ -1,0 +1,8 @@
+
+.scrollspy-link{
+	display: block;
+	text-decoration: none;
+	color: var(--sdb-color);
+	font-size: 17px;
+	padding: 0.5em 0 0.5em 0;
+}

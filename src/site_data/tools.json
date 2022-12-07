@@ -1,0 +1,22 @@
+[
+    {
+        "Title": "NASHboard: a Fantasy Basketball Companion",
+        "Date": "December _, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "NASHBoard",
+        "Link":"",
+        "MainTag": "React",
+        "Tags": "[javascript, react]",
+        "Hidden": "F"
+    },
+    {
+        "Title": "ABCD AlBum Cover Downloader",
+        "Date": "Sometime, 2020",
+        "Author": "Tyler Wu",
+        "FileName": "ABCD",
+        "Link":"https://albumcoverdownloader.herokuapp.com/",
+        "MainTag": "Flask",
+        "Tags": "[python, flask,spotipy]",
+        "Hidden": "F"
+    }
+]

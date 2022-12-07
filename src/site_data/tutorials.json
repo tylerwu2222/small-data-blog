@@ -1,0 +1,65 @@
+﻿[
+    {
+        "Title": "Pandas Pt 1: Basics",
+        "Date": "March 28, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "pandas_basics",
+        "MainTag": "python",
+        "Tags": "[python, pandas]",
+        "Hidden": "F"
+    },
+    {
+        "Title": "Pandas Pt 2: Modifying Data",
+        "Date": "March 18, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "pandas_modify",
+        "MainTag": "python",
+        "Tags": "[python, pandas]",
+        "Hidden": "W"
+    },
+    {
+        "Title": "Pandas Pt 3: Niche Topics",
+        "Date": "March 18, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "pandas_niche",
+        "MainTag": "python",
+        "Tags": "[python, pandas]",
+        "Hidden": "W"
+    },
+    {
+        "Title": "D3.js Pt 1: Concepts",
+        "Date": "July 20, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "d3_concepts",
+        "MainTag": "javascript",
+        "Tags": "[javascript,d3.js]",
+        "Hidden": "F"
+    },
+    {
+        "Title": "D3.js Pt 2: Making a Scatterplot",
+        "Date": "July 20, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "d3_scatterplot",
+        "MainTag": "javascript",
+        "Tags": "[javascript,d3.js]",
+        "Hidden": "F"
+    },
+    {
+        "Title": "D3.js Pt 3: Data join",
+        "Date": "July 20, 2022",
+        "Author": "Tyler Wu",
+        "FileName": "d3_data_join",
+        "MainTag": "javascript",
+        "Tags": "[javascript,d3.js]",
+        "Hidden": "F"
+    },
+    {
+        "Title": "D3.js: Understanding Force Layouts through Examples",
+        "Date": "October 1,2022",
+        "Author": "Tyler Wu",
+        "FileName": "d3_force_layout",
+        "MainTag": "javascript",
+        "Tags": "[javascript,d3.js]",
+        "Hidden": "F"
+    }
+]

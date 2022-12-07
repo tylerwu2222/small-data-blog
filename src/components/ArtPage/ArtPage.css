@@ -1,0 +1,22 @@
+.art-div{
+    max-width: 30vh;
+    padding: 1rem;
+    margin: 0;
+}
+
+.art-piece{
+    border-radius: 0.5rem;
+    max-width: 60vh;
+}
+
+.small-art{
+    max-width: 30vh;
+}
+
+.med-art{
+
+}
+
+.large-art{
+
+}

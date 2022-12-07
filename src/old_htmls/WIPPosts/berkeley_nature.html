@@ -1,0 +1,45 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/blog/.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">_</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">_</a>
+{% endblock %}
+
+{% block scrollspy %}
+<nav id="article-scrollspy" class="navbar scrollspy-navbar">
+    <nav class="nav nav-pills flex-column">
+            <a class="scrollspy-link" href="#section1">S1</a>
+            <a class="scrollspy-link" href="#section2">S2</a>
+    </nav>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="scrollspy-div" data-spy="scroll" data-target="#article-scrollspy" data-offset="0">
+    <p style="white-space: pre-line;"></p>
+    <h2 id="section1" class="pres-header">S1</h2>
+        <p>
+        </p>
+    <h2 id="section2" class="pres-header">S2</h2>
+        <svg id="cons-status-svg">
+        </svg>
+</div>
+{% endblock %}

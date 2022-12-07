@@ -1,0 +1,88 @@
+/* colors */
+.NASHBoard-div,
+.player-display-div {
+    --main-bg-color: rgb(92, 75, 115);
+    --secondary-bg-color: rgb(141, 122, 166);
+    --main-text-color: rgb(252, 248, 242);
+}
+
+/* grid layout */
+.NASHBoard-div{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr 10fr;
+    /* grid-template-rows: 1fr 1fr 5fr; */
+    /* column-gap: 10vmin; */
+}
+
+
+.my-team-div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* .search-player-div {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} */
+
+.filter-players-div{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.player-cards-div-flex{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/* my-player-div */
+
+/* search-player-div */
+#player-search-input {
+    margin: 10px;
+}
+
+.player-cards-div-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+
+    height: 70vh;
+    overflow: scroll;
+    background-color: var(--main-bg-color);
+    /* background-color: darkgrey; */
+}
+
+.player-card {
+    flex: 1 0 21%;
+    margin: 5px;
+    /* max-width: fit-content; */
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    /* width: 100px; */
+    /* max-height: auto; */
+
+    background-color: var(--secondary-bg-color);
+}
+
+.player-card-name {
+    padding: 0px 5px;
+    color: var(--main-text-color);
+}
+
+.player-card-img {
+    max-width: 10vw;
+}

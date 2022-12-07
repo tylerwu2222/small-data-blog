@@ -1,0 +1,73 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/blog/inaturalist_feathers/inaturalist_feathers.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">iNaturalist.org</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">Found Feathers Dataset</a>
+{% endblock %}
+
+{% block scrollspy %}
+<nav id="article-scrollspy" class="navbar scrollspy-navbar">
+    <nav class="nav nav-pills flex-column">
+            <a class="scrollspy-link" href="#section1">Why do Birds Drop Feathers?</a>
+            <a class="scrollspy-link" href="#section2">A Look at the Dataset</a>
+            <a class="scrollspy-link" href="#section3">Most Common Bird Feathers</a>
+    </nav>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="scrollspy-div" data-spy="scroll" data-target="#article-scrollspy" data-offset="0">
+    <p style="white-space: pre-line;"></p>
+    <h2>Notes</h2>
+    <ul>
+        <li>This article is WIP, but feel free to take a look!</li>
+    </ul>
+    <h2 id="section1" class="pres-header">Why do Birds Drop Feathers?</h2>
+        <p>
+            Like many animals, birds shed parts of their body as they grow and go through wear and tear. 
+            A snake needs to shed its skin to grow, and it does it all at once in spectacular fashion.
+            Unlike snakes, birds molt their feathers one at a time.
+
+            You can read more about why birds drop feathers <a href="https://www.cmnh.org/science-news/blog/august-2020/why-do-birds-lose-their-feathers">here</a>.
+        </p>
+        <p>
+            As a kid, you may have stumbled across a feather on the ground and wondered which bird it belongs to.
+            Well, on this website iNaturalist.com, there is an entire group of people recording their found feathers in an iNaturalist project.
+            With each observation, the finder posts a picture with a timestamp and their location (to varying degrees of specificity).
+            After posting, other members that see the observation make their best educated guess at which bird the feather belongs to.
+            With this information, we can plot the most common found feathers in the US, from 2008 to July of 2022.
+        </p>
+    <h2 id="section2" class="pres-header">A Look at the Dataset</h2>
+    <p>While there was data from all over the world (mostly U.S. and Europe), since I'm a U.S. resident, let's arbitrarily limit our data to just the US in typical American fashion. 
+       Using the python package datashader, we can get this quick and dirty representation of where our data comes from.</p>
+        <!-- <svg id="feather-map-svg"></svg> -->
+        <img class="post-img" src="{{ '../../static/images/blog_posts/' +  filename + '/' + images[0] }}">
+    <p>Let's dive a bit deeper at the most common feathers and where each are coming from.</p>
+
+    <h2 id="section3" class="pres-header">Most Common Bird Feathers</h2>
+    <p>If we sort our feathers by frequncy, we find the most common birds are as follows:</p>
+    <p>We should note that these probably are not the most common birds in the U.S., but rather birds that live closest to urban areas. It'd be much more interesting to also see where each of these species are regionally located, so let's make an interactive map demonstrating that.</p>
+    
+    <p>WIP...</p>
+    <svg id="feather-map-svg2">
+    </svg>
+</div>
+{% endblock %}

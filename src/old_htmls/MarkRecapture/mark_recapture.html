@@ -1,0 +1,68 @@
+{% extends 'post_template.html' %}
+
+{% block head2 %}
+<script type="module" src="{{url_for('static', filename='js/blog/mark_recapture/mark_recapture.js')}}"></script>
+{% endblock %} 
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block caption %}
+{{ caption }}
+{% endblock %}
+{% block author %}
+{{ author}}
+{% endblock %}
+{% block date %}
+{{ date }}
+{% endblock %}
+{% block data_source %}
+<a class="post-link" target="_blank" href="{{ data_source }}">_</a>
+{% endblock %}
+{% block data_file %}
+<a class="post-link" target="_blank" href="{{ data_file }}">_</a>
+{% endblock %}
+
+{% block scrollspy %}
+<nav id="article-scrollspy" class="navbar scrollspy-navbar">
+    <nav class="nav nav-pills flex-column">
+            <a class="scrollspy-link" href="#section1">The Mark and Recapture Method</a>
+            <a class="scrollspy-link" href="#section2">A Simple Simulation</a>
+    </nav>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="scrollspy-div" data-spy="scroll" data-target="#article-scrollspy" data-offset="0">
+    <p style="white-space: pre-line;"></p>
+    <span style="background-color:blueviolet; color:white">Note this article is WIP, so not everything works just yet!</span>
+    <h2 id="section1" class="pres-header">The Mark and Recapture Method</h2>
+    <a href="https://en.wikipedia.org/wiki/Mark_and_recapture">Read about it</a>
+        <p>
+            Have you ever sat around and wondered to yourself, "hmm, how do ecologists count animal populations"? 
+            Well if you have, you're in luck! We'll answer that question in this article. 
+            One of the simplest and most intuitive methods is the ✨<b>Mark and Recapture Method</b>✨.
+            Let's imagine an example using sloths 🦥 to outline the basic steps:
+            <ol start="0">
+                <li>The sloths are existing peacefully</li>
+                <li>Capture some of them (lets say 5 so we don't disturb them too much)</li>
+                <li>Mark these captured sloths with a sticker</li>
+                <li>Now that they're marked, release the <span style="text-decoration: line-through">Kraken</span> sloths!</li>
+                <li>After some time, recapture the sloths and do math</li>
+            </ol>
+            <button id="next-btn" style="visibility:hidden">capture sloths</button>
+            <svg id="sloth-demo-svg">
+                <g></g>
+            </svg>
+        </p>
+    <h2 id="section2" class="pres-header">A simulation of multiple trials of the mark and recapture method</h2>
+        <svg id="cons-status-svg">
+        </svg>
+    <h2 id="section3" class="pres-header">The math-od behind the madness</h2>
+        <p>
+            The math is actually very simple. It's just using proportions if you remember those.
+            This is what the equation looks like:
+        </p>
+        <p>WIP...</p>
+</div>
+{% endblock %}
