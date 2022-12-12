@@ -107,11 +107,11 @@ const PlayerDisplay = () => {
         const players = JSON.parse(localStorage.getItem("team"));
         const playerIDs = Object.values(players).map(p => p['id']);
         if (playerIDs.includes(displayedPlayer['id'])) {
-            console.log('remove tru');
+            // console.log('remove tru');
             setRemoveButtonVisibility(true);
         }
         else {
-            console.log('remove F');
+            // console.log('rem7ove F');
             setRemoveButtonVisibility(false);
         }
     }, [displayedPlayer]);

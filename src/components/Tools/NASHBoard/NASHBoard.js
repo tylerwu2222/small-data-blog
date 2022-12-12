@@ -3,12 +3,14 @@ import { useState, useEffect, createContext } from "react";
 
 // update every week
 import injuries from './Data/injuries.json';
+import allPlayerSplits from './Data/player_splits.json';
+import currentSeasonSchedule from './Data/season_2022_schedule.json'
+import remainingSeasonSchedule from './Data/season_2022_remaining_schedule.json'
+
 // update when new season
 import allPlayersDictRaw from './Data/active_players.json';
 import allPlayersDictSportRadar from './Data/players.json';
 import teamsDict from './Data/teams.json';
-import currentSeasonSchedule from './Data/season_2022_schedule.json'
-import remainingSeasonSchedule from './Data/season_2022_remaining_schedule.json'
 
 import PlayerDisplay from './PlayerDisplay/PlayerDisplay';
 import SearchPlayer from './SearchPlayer/SearchPlayer';
@@ -77,6 +79,7 @@ const DashBoard = () => {
         <PlayerContext.Provider value={{
             allPlayersDict,
             teamsDict,
+            allPlayerSplits,
             currentSeasonSchedule,
             remainingSeasonSchedule,
             injuries,
