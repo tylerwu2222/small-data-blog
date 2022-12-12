@@ -10,12 +10,25 @@
     flex: 2 1 21%;
     max-width: 7vw;
     max-height: 7vw;
-    vertical-align: middle;
-    /* justify-content: center; */
+    /* vertical-align: middle; */
+    text-align: center;
     border-radius: 10px;
-    background-color: var(--secondary-bg-color);
     padding: 10px;
+    border: 1px solid transparent;
+    background-color: var(--secondary-bg-color);
+    transition: 0.3s;
   }
+
+.game-card-div:hover{
+    cursor: pointer;
+    border: 1px solid rgb(65, 60, 55);
+    background-color: var(--secondary-bg-color-hover);
+}
+
+.home-away-p{
+    margin: 0px;
+    font-size: small;
+}
 
 /* team icons */
 .game-card-team-icon-img{

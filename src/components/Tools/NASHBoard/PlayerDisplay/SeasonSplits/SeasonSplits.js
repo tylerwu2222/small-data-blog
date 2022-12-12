@@ -58,22 +58,22 @@ const SeasonSplits = () => {
                 return obj;
             }, {});
         orderedStatline['tech'] = 0;
-        console.log('setting displayed player stat', orderedStatline);
+        // console.log('setting displayed player stat', orderedStatline);
         setDisplayedPlayerStatline(orderedStatline);
     }, [playersSplits]);
 
     // calculate fantasy score when player statline or league scoring changes
     useEffect(() => {
         // console.log('statline', displayedPlayerStatline, Object.keys(displayedPlayerStatline).length);
-        console.log('statline/scoring changed')
+        // console.log('statline/scoring changed')
         setDisplayedPlayerScore(() => calculateRussell(displayedPlayerStatline));
-        console.log('new score', displayedPlayerScore);
+        // console.log('new score', displayedPlayerScore);
         // }, [displayedPlayerStatline]);
     }, [displayedPlayerStatline, leagueScoring]);
 
     return (<>
         <div className='player-splits-flex'>
-            <h4 style={{marginTop: '0px'}}>Season Splits</h4>
+            <h4 style={{margin: '0px'}}>Season Splits</h4>
             <div className='player-avg-splits-div'>
                 {
                     Object.keys(stat_abbr).map(k => {
@@ -88,7 +88,8 @@ const SeasonSplits = () => {
                         }
                         else if (k == 'blocks') {
                             return <>
-                                <p className='season-stat-p'>{stat_abbr[k]}: {Math.round(playersSplits[k] * 100) / 100}</p><hr></hr>
+                                <p className='season-stat-p'>{stat_abbr[k]}: {Math.round(playersSplits[k] * 100) / 100}</p>
+                                <hr style={{borderTop: 'dashed 1px', borderBottom: 'none',backgroundColor: 'transparent'}}></hr>
                             </>;
                         }
                         else {
@@ -97,6 +98,7 @@ const SeasonSplits = () => {
                     })
                 }
             </div>
+            {/* <hr style={{borderTop: 'dashed 1px'}}></hr> */}
             <div className='player-fantasy-div'>
                 <p style={{marginBottom: '5px'}}>Fantasy Score: {displayedPlayerScore}</p>
             </div>

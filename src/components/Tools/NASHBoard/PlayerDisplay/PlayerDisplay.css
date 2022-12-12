@@ -13,6 +13,18 @@
     /* column-gap: 5px; */
 }
 
+/* my team section */
+.add-player-btn{
+    margin-right: 10px;
+}
+
+.hidden-btn{
+    display: none;
+}
+.my-team-tab{
+    padding: 5px 0px;
+}
+
 /* rounding things */
 .displayed-player-img,
 .player-display-div{
@@ -26,6 +38,10 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.profile-displayed-div{
+    text-align: center;
 }
 
 .player-splits-div{

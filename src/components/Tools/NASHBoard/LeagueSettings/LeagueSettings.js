@@ -49,35 +49,36 @@ const LeagueSettings = () => {
                 <h4 style={{ margin: '0px 0px' }}>Define Fantasy Scoring:</h4>
                 {Object.keys(leagueScoring).map(stat => {
                     return (
-                        <>
-                            <label className='league-settings-label' htmlFor={stat + 'input'}>{stat}: </label>
-                            <input className='league-settings-input' id={stat + 'input'} type='text' defaultValue={leagueScoring[stat]} maxLength={2} width={'5px'} onChange={(e) => { updateScoring(e.target.value, stat) }}></input>
-                            <hr style={{ margin: '3px 0px' }}></hr>
-                        </>
+                        <p style={{ display: 'table-row' }}>
+                            <label style={{ display: 'table-cell' }} className='league-settings-label' htmlFor={stat + 'input'}>{stat + " "}</label>
+                            <input style={{ display: 'table-cell' }} className='league-settings-input' id={stat + 'input'} type='text' defaultValue={leagueScoring[stat]} maxLength={2} width={'5px'} onChange={(e) => { updateScoring(e.target.value, stat) }}></input>
+                            {/* <hr style={{ margin: '1px 0px' }}></hr> */}
+                        </p>
                     )
                 })}
             </div>
-            <p>Sample Statline:</p>
+            <hr></hr>
+            <h4 style={{ margin: '5px 0px' }}>Sample Statline:</h4>
             <div className='sample-statline-div'>
                 <div className='statline-label-div'>
                     {Object.keys(sampleStatline).map(stat => {
-                        if (['ast', 'blk', 'ft miss', 'foul'].includes(stat)) {
+                            if (['ast', 'blk', 'ft miss', 'foul'].includes(stat)) {
                             return (
-                                <>
-                                    <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}</label>
-                                    {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
-                                    <br />
-                                </>
+                            <>
+                                <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}</label>
+                                {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
+                                <br />
+                            </>
                             )
                         }
-                        else {
+                            else {
                             return (
-                                <>
-                                    <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}/</label>
-                                    {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
-                                </>
+                            <>
+                                <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}/</label>
+                                {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
+                            </>
                             )
-                        }
+                            }
                     })}
 
                 </div>
@@ -103,8 +104,10 @@ const LeagueSettings = () => {
                     })}
 
                 </div>
+                <div className='sample-fantasy-score-div'>
+                    <p>Fantasy Score: {sampleFantasyScore}</p>
+                </div>
             </div>
-            <p>Fantasy Score: {sampleFantasyScore}</p>
         </div>
     )
 }

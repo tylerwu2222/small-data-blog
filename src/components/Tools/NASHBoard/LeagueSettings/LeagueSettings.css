@@ -17,11 +17,18 @@
     font-size: small;
 }
 
-
+.league-settings-label{
+    padding-right: 10px;
+}
 
 .league-settings-input {
     width: 15px;
-    float: right;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 5px;
+    border-width: 0;
+    padding: 2px;
+    /* float: right; */
 }
 
 .sample-statline-label {
@@ -31,12 +38,18 @@
 .sample-statline-input {
     float: left;
     width: 15px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 5px;
+    border-width: 0;
+    margin: 0px 3px;
+    padding: 2px;
 }
 
 .sample-statline-div{
     display: grid;
     grid-template-columns: 3fr 2fr min-content;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .statline-label-div{
@@ -51,4 +64,11 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.sample-fantasy-score-div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }

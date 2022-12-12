@@ -11,6 +11,7 @@ const SearchPlayer = () => {
     const {
         matchedPlayers, setMatchedPlayers,
         setDisplayedPlayer, allPlayersDict,
+        setOpponentStats,
         injuries
     } = useContext(PlayerContext);
 
@@ -45,13 +46,7 @@ const SearchPlayer = () => {
         else {
             player['injury_status'] = {}
         }
-        // get player schedule
-
-        // get matchup information
-
-        // home & away...
-
-        // console.log('injury for ', player,injury_status);
+        setOpponentStats('');
         return player;
     };
 
@@ -59,11 +54,11 @@ const SearchPlayer = () => {
         <>
             <div className="filter-players-div">
                 <input type="text" id="player-search-input" placeholder="Search Player" onChange={e => setSearchTerm(e.target.value)} size="20" />
-                {
+                {/* {
                     PositionFilters.map(position => {
                         return <input type="button" value={position}></input>
                     })
-                }
+                } */}
             </div>
             <div className="player-cards-div-flex">
                 {matchedPlayers.map(player => {

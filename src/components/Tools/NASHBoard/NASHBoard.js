@@ -36,16 +36,12 @@ const league_scoring = {
 
 // NASHBoard = NBA All Star Hub Board
 const DashBoard = () => {
-    console.log('rostered',Object.keys(allPlayersDictSportRadar))
+    // console.log('rostered',Object.keys(allPlayersDictSportRadar))
     // filter out unrostered players
     const allPlayersDict = allPlayersDictRaw
     .filter( p => Object.keys(allPlayersDictSportRadar).includes(p['full_name']));
-    // .reduce((obj, key) => {
-    //     obj[key] = allPlayersDictRaw[key];
-    //     return obj;
-    // }, {});
 
-    console.log('APD',allPlayersDict);
+    // console.log('APD',allPlayersDict);
     const [matchedPlayers, setMatchedPlayers] = useState(allPlayersDict);
     const [displayedPlayer, setDisplayedPlayer] = useState({
         "id": 201566,
@@ -61,6 +57,7 @@ const DashBoard = () => {
     const [displayedTeam, setDisplayedTeam] = useState('Los Angeles Lakers');
     const [leagueScoring, setLeagueScoring] = useState(league_scoring);
     const [todaysDate, setTodaysDate] = useState('12/09/22');
+    const [opponentStats, setOpponentStats] = useState('');
 
     const calculateRussell = (statline, scoring = leagueScoring) => {
         let runningScore = 0
@@ -88,6 +85,7 @@ const DashBoard = () => {
             displayedPlayer, setDisplayedPlayer,
             displayedTeam, setDisplayedTeam,
             displayedGames, setDisplayedGames,
+            opponentStats, setOpponentStats,
 
             leagueScoring, setLeagueScoring,
             calculateRussell
@@ -95,7 +93,7 @@ const DashBoard = () => {
             <div className='NASHBoard-div'>
                 <div className='my-team-div'>
                     <div className='NASHBoard-title-div'>
-                        <p className='NASHBoard-title' title='NASH = Not All Stars Here'><span style={{ fontSize: 'larger', fontWeight: 700 }}>NASHBoard </span><span style={{ fontSize: 'smaller' }}>Last updated: {todaysDate}</span></p>
+                        <p className='NASHBoard-title'><span title='NASH = Not All Stars Here' style={{ fontSize: 'larger', fontWeight: 700 }}>NASHBoard </span><span style={{ fontSize: 'smaller' }}>Last updated: {todaysDate}</span></p>
                     </div>
                     <PlayerDisplay />
                 </div>

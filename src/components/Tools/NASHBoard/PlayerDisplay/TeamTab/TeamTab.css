@@ -1,0 +1,11 @@
+.team-tab-img{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 2px;
+    transition: 0.25s;
+}
+
+.team-tab-img:hover{
+    /* opacity: 1; */
+    background-color: var(--secondary-bg-color);
+}

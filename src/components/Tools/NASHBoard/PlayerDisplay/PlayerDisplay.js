@@ -3,6 +3,7 @@ import { PlayerContext } from '../NASHBoard';
 
 import GameCard from './GameCard/GameCard';
 import SeasonSplits from './SeasonSplits/SeasonSplits';
+import TeamTab from './TeamTab/TeamTab';
 
 import '../NASHBoard.css'
 import './PlayerDisplay.css'
@@ -33,7 +34,14 @@ const PlayerDisplay = () => {
         currentSeasonSchedule, remainingSeasonSchedule
     } = useContext(PlayerContext);
 
-    // const [teamImage, setTeamImage] = useState('../Data/team_logos/Los Angeles Lakers.jpg');
+    const [myTeam, setMyTeam] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem("team");
+        const initialValue = JSON.parse(saved);
+        return initialValue;
+    });
+
+    const [removeButtonVisibility, setRemoveButtonVisibility] = useState(false);
 
     // set injury status if in data
     let InjuryDiv;
@@ -67,6 +75,48 @@ const PlayerDisplay = () => {
         return current_games;
     };
 
+    // LOCAL STORAGE //
+    // initialize localStorage 
+    useEffect(() => {
+        let players = JSON.parse(localStorage.getItem("team"));
+        if (!players) {
+            localStorage.setItem('team', '{}');
+        }
+    }, []);
+
+    // add player to team (local storage when clicked)
+    const addPlayer = () => {
+        // console.log('adding player to local storage');
+        const players = JSON.parse(localStorage.getItem("team"));
+        players[displayedPlayer['full_name']] = displayedPlayer;
+        localStorage.setItem('team', JSON.stringify(players));
+        setMyTeam(JSON.parse(localStorage.getItem("team")));
+        setRemoveButtonVisibility(true);
+    };
+
+    const removePlayer = () => {
+        const players = JSON.parse(localStorage.getItem("team"));
+        delete players[displayedPlayer['full_name']];
+        localStorage.setItem('team', JSON.stringify(players));
+        setMyTeam(JSON.parse(localStorage.getItem("team")));
+        setRemoveButtonVisibility(false);
+    };
+
+    // make remove button visible if on team
+    useEffect(() => {
+        const players = JSON.parse(localStorage.getItem("team"));
+        const playerIDs = Object.values(players).map(p => p['id']);
+        if (playerIDs.includes(displayedPlayer['id'])) {
+            console.log('remove tru');
+            setRemoveButtonVisibility(true);
+        }
+        else {
+            console.log('remove F');
+            setRemoveButtonVisibility(false);
+        }
+    }, [displayedPlayer]);
+
+    // TEAM STUFF //
     // get weeks schedule based on team
     useEffect(() => {
         setDisplayedGames(getCurrentWeekGames(displayedTeam));
@@ -81,6 +131,9 @@ const PlayerDisplay = () => {
         });
         if (playerTeam.length > 0) {
             playerTeam = playerTeam[0]['teamName'];
+            if (playerTeam == 'Los Angeles Clippers') {
+                playerTeam = 'LA Clippers';
+            }
             // setTeamImage('../Data/team_logos/' + displayedTeam + '.jpg');
         }
         else {
@@ -92,17 +145,27 @@ const PlayerDisplay = () => {
 
     }, [displayedPlayer]);
 
+    // team display tabs
+    let teamTabs = myTeam ? Object.values(myTeam).map(p => {
+        return <TeamTab playerObject={p}></TeamTab>
+    }) : <></>;
 
 
     return (
         <div className="player-display-div">
             <div className='profile-div'>
-                <input type="button" value="Add Player"></input>
-                <h4>{displayedPlayer['full_name']}</h4>
-                <p>{displayedPlayer['id']}</p>
-                <p><img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p>
-                {/* <p><img className="team-icon-img" src={require(teamImage)} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p> */}
-                <img className="displayed-player-img" src={require('../Data/player_headshots/' + displayedPlayer['id'] + '.jpg')} alt={displayedPlayer['id'] + ".jpg"}></img>
+                <div className='my-team-tab'>
+                    {teamTabs}
+                </div>
+                <div className='profile-displayed-div'>
+                    <input type="button" className="add-player-btn" title="Add this player to your team!" value="Add Player" onClick={() => addPlayer()}></input>
+                    <input type="button" title="Remove this player from your team :(" value="Remove Player" onClick={() => removePlayer()} className={removeButtonVisibility ? '' : 'hidden-btn'}></input>
+                    <h4>{displayedPlayer['full_name']}</h4>
+                    {/* <p>{displayedPlayer['id']}</p> */}
+                    <p><img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p>
+                    {/* <p><img className="team-icon-img" src={require(teamImage)} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p> */}
+                    <img className="displayed-player-img" src={require('../Data/player_headshots/' + displayedPlayer['id'] + '.jpg')} alt={displayedPlayer['id'] + ".jpg"}></img>
+                </div>
             </div>
             <div className='player-splits-div'>
                 <SeasonSplits />

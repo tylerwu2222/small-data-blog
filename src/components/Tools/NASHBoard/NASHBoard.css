@@ -3,7 +3,9 @@
 .player-display-div {
     --main-bg-color: rgb(92, 75, 115);
     --secondary-bg-color: rgb(141, 122, 166);
+    --secondary-bg-color-hover:rgb(166, 141, 196);
     --main-text-color: rgb(252, 248, 242);
+    
 }
 
 /* title */
