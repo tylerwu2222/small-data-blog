@@ -1,0 +1,27 @@
+.game-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    column-gap: 5px;
+}
+
+.game-card-div {
+    flex: 2 1 21%;
+    max-width: 7vw;
+    max-height: 7vw;
+    vertical-align: middle;
+    /* justify-content: center; */
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    padding: 10px;
+  }
+
+/* team icons */
+.game-card-team-icon-img{
+    max-height: 5vw;
+    max-width: 5vw;
+    
+    margin: auto;
+    display: block;
+}

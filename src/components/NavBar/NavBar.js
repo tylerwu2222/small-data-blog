@@ -118,7 +118,7 @@ const NavBar = ({ page }) => {
                     }
                     {
                         ToolsData.map(tool => {
-                            console.log('Navbar tool name',get_component_name(tool.FileName))
+                            // console.log('Navbar tool name',get_component_name(tool.FileName))
                             return <Route exact path={"/tools/" + tool.FileName} element={<ToolPage componentName={get_component_name(tool.FileName)} />}></Route>
                         })
                     }

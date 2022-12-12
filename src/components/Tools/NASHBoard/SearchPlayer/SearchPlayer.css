@@ -1,0 +1,46 @@
+/* search-player-div */
+#player-search-input {
+    margin: 10px;
+}
+
+.player-cards-div-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    height: 80vh;
+    overflow: scroll;
+    background-color: var(--main-bg-color);
+    /* background-color: darkgrey; */
+}
+
+.player-card {
+    flex: 1 0 21%;
+    margin: 5px;
+    /* max-width: fit-content; */
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    /* width: 100px; */
+    /* max-height: auto; */
+
+    background-color: var(--secondary-bg-color);
+}
+
+.player-card:hover{
+    cursor: pointer;
+}
+
+.player-card-name {
+    padding: 0px 5px;
+    color: var(--main-text-color);
+}
+
+.player-card-img {
+    max-width: 10vw;
+}

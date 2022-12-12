@@ -1,0 +1,13 @@
+.player-splits-flex{
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: var(--secondary-bg-color);
+}
+
+.season-stat-p{
+    font-size: 12px;
+}
+.season-stat-p-small{
+    font-size: 10px;
+}

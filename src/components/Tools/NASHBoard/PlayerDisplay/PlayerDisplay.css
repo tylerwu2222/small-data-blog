@@ -1,8 +1,64 @@
 .player-display-div{
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
+    height: 80vh;
+    padding: 10px;
+    margin: 10px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 6fr 5fr min-content;
+    grid-template-rows: 7fr 3fr 3fr;
+    row-gap: 20px;
+    /* justify-content: center; */
+    /* column-gap: 5px; */
+}
+
+/* rounding things */
+.displayed-player-img,
+.player-display-div{
+    border-radius: 10px;
+    /* margin: 0px 0px 0px 10px; */
+}
+
+.profile-div{
+    /* padding: 10px; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.player-splits-div{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* margin-bottom: 10px; */
+}
+
+.game-cards-div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .displayed-player-img{
     max-width: 20vw;
+}
+
+/* injury */
+.injury-div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: smaller;
+}
+
+/* team icons */
+.team-icon-img{
+    padding-right: 5px;
+    max-height: 25px;
+    max-width: 25px;
 }

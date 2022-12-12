@@ -6,31 +6,45 @@
     --main-text-color: rgb(252, 248, 242);
 }
 
+/* title */
+.NASHBoard-title{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
 /* grid layout */
 .NASHBoard-div{
     display: grid;
-    grid-template-columns: 5fr 5fr;
+    grid-template-columns: 7fr 7fr 3fr min-content;
     grid-template-rows: 1fr 10fr;
-    /* grid-template-rows: 1fr 1fr 5fr; */
-    /* column-gap: 10vmin; */
+    column-gap: 5px;
+    padding: 10px;
 }
 
-
-.my-team-div {
+/* .NASHBoard-title-div {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+} */
+
+.my-team-div {
+    /* display: flex; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-/* .search-player-div {
+
+.search-player-div{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 2;
-} */
+    grid-row-end: 3;
+}
 
-.filter-players-div{
+/* .filter-players-div{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -42,47 +56,11 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-}
-/* my-player-div */
+} */
 
-/* search-player-div */
-#player-search-input {
-    margin: 10px;
-}
-
-.player-cards-div-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 10px;
-
-    height: 70vh;
-    overflow: scroll;
-    background-color: var(--main-bg-color);
-    /* background-color: darkgrey; */
-}
-
-.player-card {
-    flex: 1 0 21%;
-    margin: 5px;
-    /* max-width: fit-content; */
-    border-radius: 5px;
-    justify-content: center;
-    text-align: center;
-    word-wrap: break-word;
-    /* width: 100px; */
-    /* max-height: auto; */
-
-    background-color: var(--secondary-bg-color);
-}
-
-.player-card-name {
-    padding: 0px 5px;
-    color: var(--main-text-color);
-}
-
-.player-card-img {
-    max-width: 10vw;
+.league-scoring-div{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }

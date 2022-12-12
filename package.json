@@ -13,6 +13,7 @@
     "basketball-reference-js": "^0.2.6",
     "nba": "^4.15.0",
     "nba-api-client": "^1.1.1",
+    "nedb": "^1.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.3",

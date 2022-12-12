@@ -1,0 +1,54 @@
+.league-settings-div {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.league-settings-div {
+    height: 75vh;
+    /* margin: 0px 10px 0px 0px; */
+}
+
+.league-settings-label,
+.league-settings-input,
+.sample-statline-label,
+.sample-statline-input {
+    font-size: small;
+}
+
+
+
+.league-settings-input {
+    width: 15px;
+    float: right;
+}
+
+.sample-statline-label {
+    float: left
+}
+
+.sample-statline-input {
+    float: left;
+    width: 15px;
+}
+
+.sample-statline-div{
+    display: grid;
+    grid-template-columns: 3fr 2fr min-content;
+    grid-template-rows: 1fr;
+}
+
+.statline-label-div{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.statline-input-div{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
