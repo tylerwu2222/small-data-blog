@@ -4,6 +4,7 @@ import { PlayerContext } from '../../NASHBoard';
 import './SeasonSplits.css'
 
 const stat_abbr = {
+    'games_played':'Games',
     'minutes': 'MIN',
     'points': 'PTS',
     'rebounds': 'REB',
@@ -29,6 +30,7 @@ const SeasonSplits = () => {
 
     const getCondensedSplits = (allSplits, year = '2022', type = 'average') => {
         const yearSplits = allSplits[year][type];
+        console.log('SPLITS',yearSplits);
         const subCategories = Object.keys(yearSplits).slice(0, 11).concat(Object.keys(yearSplits).slice(14, 20)).concat(Object.keys(yearSplits).slice(26, 34));
         const condensedSplits = Object.keys(yearSplits)
             .filter(key => subCategories.includes(key))
@@ -36,9 +38,11 @@ const SeasonSplits = () => {
                 obj[key] = yearSplits[key];
                 return obj;
             }, {});
+        // TESTING WITH RANDOM NUMBER GAMES PLAYED
+        condensedSplits['games_played'] = Math.round(Math.random() * 20)
         condensedSplits['field_goals_missed'] = (condensedSplits['two_points_att'] + condensedSplits['three_points_att']) - (condensedSplits['two_points_made'] + condensedSplits['three_points_made']);
         condensedSplits['free_throws_missed'] = condensedSplits['free_throws_att'] - condensedSplits['free_throws_made']
-        // console.log('subcats', condensedSplits);
+        console.log('CSPLITS', condensedSplits);
         return condensedSplits;
     }
 
@@ -53,7 +57,6 @@ const SeasonSplits = () => {
 
     // update statline array when player changes
     useEffect(() => {
-
         let orderedStatline = Object.keys(playersSplits)
             .filter(key => Object.keys(stat_abbr).includes(key) && !['off_rebounds', 'def_rebounds', 'minutes'].includes(key))
             .reduce((obj, key) => {

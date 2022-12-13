@@ -41,7 +41,7 @@ const SearchPlayer = () => {
     // update search matched players when ANY search term/filter changes
     useEffect(() => {
         // setMatchedPlayers(searchPlayer())
-        console.log('new queries',minGames, searchTerm,selectedFilter);
+        // console.log('new queries',minGames, searchTerm,selectedFilter);
         setMatchedPlayers(runFilters())
     }, [searchTerm, selectedFilter, minGames]);
 
@@ -50,6 +50,7 @@ const SearchPlayer = () => {
         let filteredPlayers;
         // 1) filter for number of games
         filteredPlayers = changeMinGames();
+        console.log(filteredPlayers);
 
         // 2) filter by search query
         filteredPlayers = searchPlayer(filteredPlayers);
@@ -73,6 +74,7 @@ const SearchPlayer = () => {
     // SORT & FILTER //
     const getCondensedSplits = (allSplits, year = '2022', type = 'average') => {
         const yearSplits = allSplits[year][type];
+        console.log('SPSPLITS',yearSplits);
         const subCategories = Object.keys(yearSplits).slice(0, 11).concat(Object.keys(yearSplits).slice(14, 20)).concat(Object.keys(yearSplits).slice(26, 34));
         const condensedSplits = Object.keys(yearSplits)
             .filter(key => subCategories.includes(key))
@@ -80,6 +82,8 @@ const SearchPlayer = () => {
                 obj[key] = yearSplits[key];
                 return obj;
             }, {});
+        // TESTING WITH RANDOM NUMBER GAMES PLAYED
+        condensedSplits['games_played'] = Math.round(Math.random() * 20);
         condensedSplits['field_goals_missed'] = (condensedSplits['two_points_att'] + condensedSplits['three_points_att']) - (condensedSplits['two_points_made'] + condensedSplits['three_points_made']);
         condensedSplits['free_throws_missed'] = condensedSplits['free_throws_att'] - condensedSplits['free_throws_made']
         // console.log('subcats', condensedSplits);
@@ -90,7 +94,7 @@ const SearchPlayer = () => {
         // let playerNames = matchedPlayers.map(p => p['full_name']);
         let playerNames = filteredPlayers.map(p => p['full_name']);
         let playersSplits = playerNames.map(p => getCondensedSplits(allPlayerSplits[p]));
-        console.log('sds', playersSplits);
+        // console.log('sds', playersSplits);
         let playersStats;
         if (selectedFilter == SortFilters[0]) {
             return filteredPlayers;
@@ -135,8 +139,22 @@ const SearchPlayer = () => {
     }
 
     const changeMinGames = () => {
-
-        return allPlayersDict;
+        let playersSplits = allPlayersDict.map(p => getCondensedSplits(allPlayerSplits[p['full_name']]));
+        let playerNames = allPlayersDict.map(p => p['full_name']);
+        let playerGames = playersSplits.map(p => p['games_played']);
+        let filterable = playerNames.map((n, i) => { return [n, playerGames[i]] });
+        let filtered = filterable.filter(p => p[1] >= minGames)
+        const filteredNames = filtered.map(a => a[0]);
+        const minGamesPlayers = filteredNames.reduce(
+            (obj, playerName) => {
+                // console.log('OJ',obj,playerName);
+                obj.push(allPlayersDict.filter(p => p['full_name'] == playerName)[0]);
+                return obj;
+            },
+            []
+        );
+        return minGamesPlayers;
+        // return allPlayersDict;
     }
 
     // SELECT //
@@ -159,17 +177,17 @@ const SearchPlayer = () => {
         return player;
     };
 
+    // {/* {
+    //     PositionFilters.map(position => {
+    //         return <input type="button" value={position}></input>
+    //     })
+    // } */}
     return (
         <>
             <div className="filter-players-div">
                 <input type="text" id="player-search-input" placeholder="Search Player" onChange={e => setSearchTerm(e.target.value)} size="20" />
-                {/* {
-                    PositionFilters.map(position => {
-                        return <input type="button" value={position}></input>
-                    })
-                } */}
-                <select className="filter-players-select" value={selectedFilter} onChange={(e) => setSelectedFilter(e.target.value) }>
-                {/* <select className="filter-players-select" value={selectedFilter} onChange={(e) => { setMatchedPlayers(sortPlayers(e.target.value)) }}> */}
+
+                <select className="filter-players-select" value={selectedFilter} onChange={(e) => setSelectedFilter(e.target.value)}>
                     {SortFilters.map(f => {
                         return (
                             <option value={f}>{f}</option>
@@ -189,9 +207,7 @@ const SearchPlayer = () => {
                             <img className="player-card-img" src={require('../Data/player_headshots/' + player['id'] + ".jpg")} alt={player['id'] + ".jpg"}></img>
                         </div>
                     )
-                }
-                )
-                }
+                })}
             </div>
         </>
     )
