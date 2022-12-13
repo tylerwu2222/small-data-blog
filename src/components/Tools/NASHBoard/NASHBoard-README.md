@@ -2,6 +2,8 @@
 
 #### Link to tool: [NASHBoard](https://www.smalldata.blog/tools/NASHBoard)
 
+#### Link to Github: [Github](https://github.com/tylerwu2222/small-data-blog/tree/master/src/components/Tools/NASHBoard)
+
 #### Project Overview
 This project strives to create a dashboard for fantasy basketball managers. Allowing them to explore NBA players' stats as well as the players' games for the current week in *a single* aggregated tool. Using faceted categories, player can conduct a more fine-tuned search by concurrently sorting through multiple categories at once. Users can also store persisting data by choosing players to keep on their team.
 
