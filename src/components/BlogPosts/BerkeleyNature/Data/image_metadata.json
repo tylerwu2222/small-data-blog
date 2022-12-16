@@ -1,0 +1,1682 @@
+[
+  {
+    "img": "plant (11).jpg",
+    "tags": "['Vegetation', 'Plant', 'Tree', 'Grass']",
+    "date": "8/19/2022",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "plant (15).jpg",
+    "tags": "['Plant', 'Cactus', 'Reef', 'Sea', 'Water', 'Sea', 'Outdoors', 'Nature', 'Animal']",
+    "date": "8/19/2022",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "sky (12).jpg",
+    "tags": "['Cable', 'Utility', 'Power', 'Electric']",
+    "date": "8/19/2022",
+    "city": "San Francisco",
+    "location": "Transit Norcal",
+    "spec_location": "F Bus"
+  },
+  {
+    "img": "sky (13).jpg",
+    "tags": "['Fence', 'Tarmac', 'Road']",
+    "date": "8/19/2022",
+    "city": "San Francisco",
+    "location": "Transit Norcal",
+    "spec_location": "F Bus"
+  },
+  {
+    "img": "water (1).jpg",
+    "tags": "['Pond', 'Nature', 'Water', 'Outdoors', 'Land', 'Scenery', 'Lake', 'Tree', 'Plant', 'Wilderness', 'Fir', 'Swamp', 'Vegetation']",
+    "date": "8/27/2022",
+    "city": "Berkeley",
+    "location": "Tilden Park",
+    "spec_location": "Berkeley Hike"
+  },
+  {
+    "img": "plant (1).jpg",
+    "tags": "['Dahlia', 'Flower', 'Plant', 'Petal', 'Geranium', 'Rose']",
+    "date": "9/3/2022",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "plant (17).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "plant (18).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "animal (8).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "animal (9).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "tree (49).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "sky (28).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Outside"
+  },
+  {
+    "img": "window (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Marina",
+    "spec_location": "Marina Animals"
+  },
+  {
+    "img": "marina (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Marina",
+    "spec_location": "Marina Coast"
+  },
+  {
+    "img": "marina (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Marina",
+    "spec_location": "Marina Coast"
+  },
+  {
+    "img": "marina (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Marina",
+    "spec_location": "Marina Coast"
+  },
+  {
+    "img": "sky (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Oakland",
+    "location": "Harbor",
+    "spec_location": "Oakland"
+  },
+  {
+    "img": "water (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Marina",
+    "spec_location": "Marina"
+  },
+  {
+    "img": "window.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "sky.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Northside",
+    "spec_location": "Near Campus"
+  },
+  {
+    "img": "plant (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (28).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "sky (27).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "animal (10).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "sky (10).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Window"
+  },
+  {
+    "img": "sky (11).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Window"
+  },
+  {
+    "img": "bug (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "bug (6).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "plant (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "sky (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Tennis Courts",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "plant.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "sky (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "sky (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "window (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "window (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "East Asian Library"
+  },
+  {
+    "img": "daily_tree (9).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (8).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (7).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "tree (7).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "daily_tree (6).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "tree (8).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "daily_tree (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "daily_tree (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "tree (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "daily_tree (10).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "sky (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Tennis Courts",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "tree (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "tree (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "tree.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Book",
+    "location": "Book",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "plant (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "plant (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "grass (1).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "daily_tree.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Daily Tree"
+  },
+  {
+    "img": "tree (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Apartment Outside"
+  },
+  {
+    "img": "tree (2).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "On Campus"
+  },
+  {
+    "img": "animal.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "IKEA",
+    "spec_location": "Emeryville"
+  },
+  {
+    "img": "animal (25).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "IKEA",
+    "spec_location": "Emeryville Aftermath"
+  },
+  {
+    "img": "animal (26).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "IKEA",
+    "spec_location": "Emeryville Aftermath"
+  },
+  {
+    "img": "animal (27).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "IKEA",
+    "spec_location": "Emeryville Aftermath"
+  },
+  {
+    "img": "protest.jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (15).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "animal (16).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (14).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (15).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (16).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (17).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (18).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (19).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (20).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "snow.JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "tree (13).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "tree (14).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "tree (23).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "water (3).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "water (4).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "water (5).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "water (6).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (23).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (24).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (25).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "sky (26).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Amtrak",
+    "spec_location": "Transit Seattle"
+  },
+  {
+    "img": "animal (17).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Space Needle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "tree (19).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Space Needle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "tree (20).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Space Needle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "tree (21).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Space Needle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "animal (20).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (21).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (22).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (23).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (24).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "leaves (1).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "U Washington",
+    "spec_location": "UW"
+  },
+  {
+    "img": "leaves (2).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "U Washington",
+    "spec_location": "UW"
+  },
+  {
+    "img": "leaves (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "leaves (3).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (19).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (20).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (21).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (24).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (25).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "plant (26).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "sky (21).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "sky (22).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (15).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (16).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (17).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (18).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (22).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (24).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (25).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (26).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (27).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (28).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (29).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (30).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (31).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (32).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "tree (33).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (18).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Apartment",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "animal (19).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Arboretum",
+    "spec_location": "Seattle Arboretum"
+  },
+  {
+    "img": "animal (11).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "animal (12).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "animal (13).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "animal (14).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "plant (16).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "tree (12).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "tree (10).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "tree (11).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "tree (9).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "plant (30).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "animal (29).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (31).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (32).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (33).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (34).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (35).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "animal (30).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (50).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Mezzos"
+  },
+  {
+    "img": "tree (51).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "tree (52).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campanelli"
+  },
+  {
+    "img": "tree (53).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "tree (54).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Courtyard"
+  },
+  {
+    "img": "tree (55).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "J School"
+  },
+  {
+    "img": "plant (28).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (29).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (31).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (32).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (33).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (34).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (35).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (36).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (37).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (38).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (39).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (40).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (41).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (42).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (35).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (43).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (44).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (45).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (46).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (48).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "water.JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "plant (27).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "Plaza",
+    "spec_location": "Emeryville"
+  },
+  {
+    "img": "tree (38).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "Plaza",
+    "spec_location": "Emeryville"
+  },
+  {
+    "img": "tree (39).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "Bus",
+    "spec_location": "Transit Norcal"
+  },
+  {
+    "img": "tree (40).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "Bus",
+    "spec_location": "Transit Norcal"
+  },
+  {
+    "img": "tree (41).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Emeryville",
+    "location": "Bus",
+    "spec_location": "Transit Norcal"
+  },
+  {
+    "img": "tree (42).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment Outside"
+  },
+  {
+    "img": "leaves.JPG",
+    "tags": "",
+    "date": "",
+    "city": "Stanford",
+    "location": "Campus",
+    "spec_location": "Stanford"
+  },
+  {
+    "img": "pumpkin.JPG",
+    "tags": "",
+    "date": "",
+    "city": "Stanford",
+    "location": "Campus",
+    "spec_location": "Stanford"
+  },
+  {
+    "img": "sky (6).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Stanford",
+    "location": "Campus",
+    "spec_location": "Stanford"
+  },
+  {
+    "img": "sky (7).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Stanford",
+    "location": "Campus",
+    "spec_location": "Stanford"
+  },
+  {
+    "img": "sky (8).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Stanford",
+    "location": "Campus",
+    "spec_location": "Stanford"
+  },
+  {
+    "img": "plant (22).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "plant (23).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "grass (2).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "plant (10).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "plant (12).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "plant (13).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "plant (14).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "plant (6).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "plant (7).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "plant (8).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "plant (9).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Salesforce Tower",
+    "spec_location": "Salesforce Tower"
+  },
+  {
+    "img": "tree (6).JPG",
+    "tags": "",
+    "date": "",
+    "city": "San Francisco",
+    "location": "Golden Gate Park",
+    "spec_location": "Golden Gate Park"
+  },
+  {
+    "img": "bug (1).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "bug (2).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "bug (3).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "bug (4).JPG",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (3).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (4).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment",
+    "spec_location": "Apartment"
+  },
+  {
+    "img": "animal (6).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Downton",
+    "spec_location": "Downton"
+  },
+  {
+    "img": "animal (7).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Downton",
+    "spec_location": "Downton"
+  },
+  {
+    "img": "leaves (5).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Seattle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "leaves (6).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Seattle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "leaves (7).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Seattle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "leaves (8).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Seattle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "leaves (9).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Seattle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "sky (9).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Campus",
+    "spec_location": "Campus"
+  },
+  {
+    "img": "tree (34).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Seattle",
+    "location": "Space Needle",
+    "spec_location": "Seattle"
+  },
+  {
+    "img": "tree (36).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Botanical Garden",
+    "spec_location": "Botanical Garden"
+  },
+  {
+    "img": "tree (37).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Southside",
+    "spec_location": "Southside"
+  },
+  {
+    "img": "tree (47).jpg",
+    "tags": "",
+    "date": "",
+    "city": "Berkeley",
+    "location": "Apartment Courtyard",
+    "spec_location": "Apartment Courtyard"
+  }
+]

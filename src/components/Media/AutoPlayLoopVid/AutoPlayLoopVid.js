@@ -2,7 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-export const AutoPlayLoopVid = ({ vidSrc }) => {
+export const AutoPlayLoopVid = ({ vidSrc, classes='' }) => {
     const videoRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -20,7 +20,7 @@ export const AutoPlayLoopVid = ({ vidSrc }) => {
 
     return (
         <VisibilitySensor onChange={(isVisible) => setIsVisible(isVisible)}>
-            <video ref={videoRef} width="100%" height="auto" autoPlay={true} loop muted="muted">
+            <video className = {classes} ref={videoRef} width="100%" height="auto" autoPlay={true} loop muted="muted">
                 <source src={vidSrc} type='video/mp4' />
             </video>
         </VisibilitySensor>

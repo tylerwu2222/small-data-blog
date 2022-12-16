@@ -1,0 +1,3585 @@
+[
+    {
+        "img": "plant (11).jpg",
+        "tags": [
+            "Vegetation",
+            "Plant",
+            "Tree",
+            "Grass"
+        ],
+        "date": "8/19/2022",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "plant (15).jpg",
+        "tags": [
+            "Plant",
+            "Cactus",
+            "Reef",
+            "Sea",
+            "Water",
+            "Sea Life",
+            "Outdoors",
+            "Nature",
+            "Animal"
+        ],
+        "date": "8/19/2022",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "sky (12).jpg",
+        "tags": [
+            "Cable",
+            "Utility Pole",
+            "Power Lines",
+            "Electric Transmission Tower"
+        ],
+        "date": "8/19/2022",
+        "city": "San Francisco",
+        "location": "Transit Norcal",
+        "spec_location": "F Bus"
+    },
+    {
+        "img": "sky (13).jpg",
+        "tags": [
+            "Fence",
+            "Tarmac",
+            "Road"
+        ],
+        "date": "8/19/2022",
+        "city": "San Francisco",
+        "location": "Transit Norcal",
+        "spec_location": "F Bus"
+    },
+    {
+        "img": "water (1).jpg",
+        "tags": [
+            "Pond",
+            "Nature",
+            "Water",
+            "Outdoors",
+            "Land",
+            "Scenery",
+            "Lake",
+            "Tree",
+            "Wilderness",
+            "Fir"
+        ],
+        "date": "8/27/2022",
+        "city": "Berkeley",
+        "location": "Tilden Park",
+        "spec_location": "Berkeley Hike"
+    },
+    {
+        "img": "plant (1).jpg",
+        "tags": [
+            "Dahlia",
+            "Flower",
+            "Plant",
+            "Petal",
+            "Geranium",
+            "Rose"
+        ],
+        "date": "9/3/2022",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "plant (17).jpg",
+        "tags": [
+            "Potted Plant",
+            "Plant",
+            "Pot",
+            "Cookware",
+            "Leaf",
+            "Flower Arrangement",
+            "Flower",
+            "Moss"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "plant (18).jpg",
+        "tags": [
+            "Plant",
+            "Pot",
+            "Cookware",
+            "Flower",
+            "Flower Arrangement"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (2).jpg",
+        "tags": [
+            "Soil",
+            "Mammal",
+            "Animal",
+            "Rodent",
+            "Squirrel",
+            "Dog",
+            "Pet",
+            "Canine"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "animal (8).jpg",
+        "tags": [
+            "Dog",
+            "Mammal",
+            "Animal",
+            "Pet",
+            "Canine",
+            "Rodent",
+            "Squirrel",
+            "Soil"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "animal (9).jpg",
+        "tags": [
+            "Rodent",
+            "Mammal",
+            "Animal",
+            "Squirrel",
+            "Bird"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "tree (49).jpg",
+        "tags": [
+            "Neighborhood",
+            "Monastery",
+            "Building",
+            "City",
+            "Condo",
+            "Housing",
+            "Urban",
+            "Metropolis",
+            "Roof",
+            "House"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "sky (28).jpg",
+        "tags": [
+            "Handrail",
+            "Railing",
+            "Utility Pole"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Outside"
+    },
+    {
+        "img": "window (1).jpg",
+        "tags": [
+            "Loft",
+            "Housing",
+            "Indoors",
+            "House",
+            "Room",
+            "Building",
+            "Window",
+            "Floor",
+            "Staircase",
+            "Flooring"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (1).jpg",
+        "tags": [
+            "Rock",
+            "Slate",
+            "Soil",
+            "Rat",
+            "Animal",
+            "Mammal",
+            "Rodent"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Marina",
+        "spec_location": "Marina Animals"
+    },
+    {
+        "img": "marina (1).jpg",
+        "tags": [
+            "License Plate",
+            "Vehicle",
+            "Transportation",
+            "Car",
+            "Road",
+            "Chair",
+            "Furniture",
+            "Alloy Wheel",
+            "Wheel",
+            "Tarmac"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Marina",
+        "spec_location": "Marina Coast"
+    },
+    {
+        "img": "marina (3).jpg",
+        "tags": [
+            "Waterfront",
+            "Water",
+            "Handrail",
+            "Scenery",
+            "Outdoors",
+            "Nature",
+            "Pier",
+            "Port",
+            "Walkway",
+            "Path"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Marina",
+        "spec_location": "Marina Coast"
+    },
+    {
+        "img": "marina (4).jpg",
+        "tags": [
+            "Tree",
+            "Grove",
+            "Vegetation",
+            "Woodland",
+            "Outdoors",
+            "Nature",
+            "Shelter",
+            "Soil",
+            "Oak",
+            "Grass",
+            "Wood",
+            "Wilderness",
+            "Box",
+            "Sycamore",
+            "Path",
+            "Street",
+            "Summer",
+            "Person",
+            "Herbal",
+            "Rock"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Marina",
+        "spec_location": "Marina Coast"
+    },
+    {
+        "img": "sky (3).jpg",
+        "tags": [
+            "Waterfront",
+            "Water",
+            "Port",
+            "Harbor",
+            "Pier",
+            "Sailboat",
+            "Boat",
+            "Vehicle",
+            "Watercraft",
+            "Marina"
+        ],
+        "date": "",
+        "city": "Oakland",
+        "location": "Harbor",
+        "spec_location": "Oakland"
+    },
+    {
+        "img": "water (2).jpg",
+        "tags": [
+            "Waterfront",
+            "Water",
+            "Pier",
+            "Port",
+            "Landscape",
+            "Outdoors",
+            "Nature",
+            "Scenery",
+            "Sea"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Marina",
+        "spec_location": "Marina"
+    },
+    {
+        "img": "window.jpg",
+        "tags": [
+            "Window",
+            "Skylight",
+            "Building",
+            "Architecture"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "sky.jpg",
+        "tags": [
+            "Handrail",
+            "Railing",
+            "City",
+            "Metropolis",
+            "Urban",
+            "Neighborhood",
+            "Window",
+            "Home Decor",
+            "Office Building",
+            "Sign"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Northside",
+        "spec_location": "Near Campus"
+    },
+    {
+        "img": "plant (5).jpg",
+        "tags": [
+            "Potted Plant",
+            "Plant",
+            "Planter",
+            "Pottery",
+            "Herbal",
+            "Pot",
+            "Cookware",
+            "Petal",
+            "Leaf",
+            "Moss"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (28).jpg",
+        "tags": [
+            "Soil",
+            "Bird",
+            "Animal",
+            "Pigeon"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "sky (27).jpg",
+        "tags": [
+            "Neighborhood",
+            "Pickup Truck",
+            "Car",
+            "Road",
+            "Alloy Wheel",
+            "Wheel",
+            "Spoke",
+            "Person",
+            "Bicycle",
+            "City"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "animal (10).jpg",
+        "tags": [
+            "Walkway",
+            "Path",
+            "Bird",
+            "Animal",
+            "Sparrow",
+            "Anthus",
+            "Flagstone"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "sky (10).jpg",
+        "tags": [
+            "Sunset",
+            "Sky",
+            "Outdoors",
+            "Nature",
+            "Silhouette",
+            "Sunlight",
+            "Flare",
+            "Building",
+            "Car",
+            "Utility Pole"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Window"
+    },
+    {
+        "img": "sky (11).jpg",
+        "tags": [
+            "Sunset",
+            "Sky",
+            "Nature",
+            "Outdoors",
+            "Silhouette",
+            "Sunlight",
+            "Flare",
+            "Building",
+            "Scenery",
+            "Sunrise"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Window"
+    },
+    {
+        "img": "bug (5).jpg",
+        "tags": [
+            "Insect",
+            "Animal",
+            "Invertebrate",
+            "Moth",
+            "Butterfly"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "bug (6).jpg",
+        "tags": [
+            "Insect",
+            "Animal",
+            "Invertebrate",
+            "Butterfly",
+            "Moth"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "plant (4).jpg",
+        "tags": [
+            "Potted Plant",
+            "Plant",
+            "Flower",
+            "Moss"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "sky (5).jpg",
+        "tags": [
+            "Person",
+            "Shoe",
+            "Footwear",
+            "Clothing",
+            "Building",
+            "Architecture",
+            "Office Building"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Tennis Courts",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "plant.jpg",
+        "tags": [
+            "Floor",
+            "Corridor",
+            "Indoors",
+            "Building",
+            "Flooring",
+            "Portico",
+            "Housing",
+            "House",
+            "Walkway",
+            "Path"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "sky (1).jpg",
+        "tags": [
+            "Tree",
+            "Silhouette",
+            "Fir",
+            "Vegetation",
+            "Sky",
+            "Nature",
+            "Outdoors",
+            "Conifer",
+            "Scenery",
+            "Sunset"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "sky (2).jpg",
+        "tags": [
+            "Car",
+            "Pickup Truck",
+            "Truck",
+            "Office Building",
+            "Building",
+            "Alloy Wheel",
+            "Wheel",
+            "Bird",
+            "Road",
+            "Van"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "window (3).jpg",
+        "tags": [
+            "Window Shade",
+            "Home Decor",
+            "Curtain",
+            "Building",
+            "Architecture",
+            "Window"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "window (2).jpg",
+        "tags": [
+            "Floor",
+            "Flooring",
+            "Building",
+            "Architecture",
+            "Interior Design",
+            "Indoors",
+            "Skylight",
+            "Window",
+            "Handrail"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "East Asian Library"
+    },
+    {
+        "img": "daily_tree (9).jpg",
+        "tags": [
+            "Spoke",
+            "Alloy Wheel",
+            "Car",
+            "Wheel",
+            "Tire",
+            "Coupe",
+            "Road",
+            "License Plate",
+            "Tree",
+            "Tarmac"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (8).jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Alloy Wheel",
+            "Car",
+            "Wheel",
+            "Tire",
+            "Tree",
+            "License Plate",
+            "Outdoors",
+            "Tarmac"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (7).jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Tree",
+            "Car",
+            "Alloy Wheel",
+            "Wheel",
+            "Outdoors",
+            "Road",
+            "Tarmac",
+            "Coupe"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "tree (7).jpg",
+        "tags": [
+            "Handrail",
+            "Railing",
+            "Metropolis",
+            "City",
+            "Urban",
+            "Tree",
+            "Plant"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "daily_tree (6).jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Car",
+            "Vehicle",
+            "Outdoors",
+            "Alloy Wheel",
+            "Wheel",
+            "Tree",
+            "Plant",
+            "Coupe"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "tree (8).jpg",
+        "tags": [
+            "Tree",
+            "Building",
+            "City",
+            "Path",
+            "Handrail",
+            "Road",
+            "Fir",
+            "Urban",
+            "Walkway",
+            "Car"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "daily_tree (4).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Pond",
+            "Water",
+            "Outdoors",
+            "Nature",
+            "Vegetation",
+            "Land"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (5).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Vegetation",
+            "Tarmac",
+            "Road",
+            "Water",
+            "Outdoors",
+            "Weather",
+            "Nature"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (3).jpg",
+        "tags": [
+            "Land",
+            "Outdoors",
+            "Nature",
+            "Tree",
+            "Vegetation",
+            "Flare",
+            "Sunlight",
+            "Weather",
+            "Pond",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (2).jpg",
+        "tags": [
+            "Spoke",
+            "Coupe",
+            "Car",
+            "Tarmac",
+            "Road",
+            "Tree",
+            "Alloy Wheel",
+            "Wheel",
+            "License Plate",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "daily_tree (1).jpg",
+        "tags": [
+            "Weather",
+            "Outdoors",
+            "Nature",
+            "Tarmac",
+            "Road",
+            "Tree",
+            "Person",
+            "Vegetation",
+            "Car",
+            "Fog"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "tree (4).jpg",
+        "tags": [
+            "Neighborhood",
+            "Roof",
+            "Housing",
+            "House",
+            "Building",
+            "Architecture",
+            "Monastery",
+            "Tree",
+            "Plant"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "daily_tree (10).jpg",
+        "tags": [
+            "Spoke",
+            "Coupe",
+            "Car",
+            "Alloy Wheel",
+            "Wheel",
+            "Tire",
+            "License Plate",
+            "Person",
+            "Road",
+            "Tarmac"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "sky (4).jpg",
+        "tags": [
+            "Person",
+            "Tennis",
+            "Sport"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Tennis Courts",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "tree (1).jpg",
+        "tags": [
+            "Wood",
+            "Bench",
+            "Furniture",
+            "Desk",
+            "Tree",
+            "Patio",
+            "Housing",
+            "Walkway",
+            "Outdoors",
+            "Plywood"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "tree (5).jpg",
+        "tags": [
+            "Wood",
+            "Walkway",
+            "Bench",
+            "Desk",
+            "Tree",
+            "Flagstone",
+            "Patio",
+            "Slate",
+            "Garden",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "tree.jpg",
+        "tags": [
+            "Book",
+            "Publication",
+            "Art",
+            "Drawing",
+            "Soil",
+            "Tree",
+            "Plant"
+        ],
+        "date": "",
+        "city": "Book",
+        "location": "Book",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "plant (2).jpg",
+        "tags": [
+            "Moss",
+            "Plant",
+            "Leaf",
+            "Insect",
+            "Invertebrate",
+            "Animal",
+            "Fern",
+            "Bud",
+            "Sprout",
+            "Flower"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "plant (3).jpg",
+        "tags": [
+            "Moss",
+            "Plant",
+            "Leaf",
+            "Bud",
+            "Flower",
+            "Sprout",
+            "Fern",
+            "Insect",
+            "Invertebrate",
+            "Herbal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "grass (1).jpg",
+        "tags": [
+            "Field",
+            "Baseball Game",
+            "Baseball",
+            "Sport",
+            "Person",
+            "Car",
+            "Vehicle",
+            "Transportation"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "daily_tree.jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Car",
+            "Coupe",
+            "Sports Car",
+            "Alloy Wheel",
+            "Wheel",
+            "Tire",
+            "Weather",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Daily Tree"
+    },
+    {
+        "img": "tree (3).jpg",
+        "tags": [
+            "Sidewalk",
+            "Path",
+            "Road",
+            "Tree",
+            "Tarmac",
+            "Car",
+            "Intersection",
+            "City",
+            "Street",
+            "Urban"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Apartment Outside"
+    },
+    {
+        "img": "tree (2).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Vegetation",
+            "Grove",
+            "Woodland",
+            "Outdoors",
+            "Nature",
+            "Land",
+            "Park",
+            "Grass",
+            "Tree Trunk",
+            "Person",
+            "Flower",
+            "Autumn"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "On Campus"
+    },
+    {
+        "img": "animal.jpg",
+        "tags": [
+            "Baseball (Ball)",
+            "Sport",
+            "Baseball",
+            "Ball",
+            "Bear",
+            "Wildlife",
+            "Mammal",
+            "Animal"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "IKEA",
+        "spec_location": "Emeryville"
+    },
+    {
+        "img": "animal (25).jpg",
+        "tags": [
+            "Toy"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "IKEA",
+        "spec_location": "Emeryville Aftermath"
+    },
+    {
+        "img": "animal (26).jpg",
+        "tags": [
+            "Couch",
+            "Furniture",
+            "Living Room",
+            "Indoors",
+            "Room",
+            "Building",
+            "Architecture"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "IKEA",
+        "spec_location": "Emeryville Aftermath"
+    },
+    {
+        "img": "animal (27).jpg",
+        "tags": [
+            "Toy",
+            "Teddy Bear"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "IKEA",
+        "spec_location": "Emeryville Aftermath"
+    },
+    {
+        "img": "protest.jpg",
+        "tags": [
+            "City",
+            "Neighborhood",
+            "Metropolis",
+            "Urban",
+            "Sidewalk",
+            "Road",
+            "Person",
+            "Car",
+            "Intersection",
+            "Shoe"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (15).JPG",
+        "tags": [
+            "Land",
+            "Nature",
+            "Outdoors",
+            "Water",
+            "Beach",
+            "Sea",
+            "Shoreline",
+            "Flying",
+            "Bird",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "animal (16).JPG",
+        "tags": [
+            "Flying",
+            "Bird",
+            "Animal",
+            "Land",
+            "Outdoors",
+            "Nature",
+            "Water"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (14).JPG",
+        "tags": [
+            "Scenery",
+            "Outdoors",
+            "Nature",
+            "Bird",
+            "Animal",
+            "Water"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (15).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Grassland",
+            "Nature",
+            "Outdoors",
+            "Field",
+            "Wilderness",
+            "Conifer"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (16).JPG",
+        "tags": [
+            "Road",
+            "Gravel",
+            "Railway",
+            "Transportation",
+            "Car",
+            "Vehicle",
+            "Terminal",
+            "Train Station",
+            "Train"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (17).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Conifer",
+            "Vegetation",
+            "Wilderness",
+            "Outdoors",
+            "Nature",
+            "Land",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (18).JPG",
+        "tags": [
+            "Sky",
+            "Outdoors",
+            "Nature",
+            "Scenery",
+            "Sunlight",
+            "Desert",
+            "Ground",
+            "Beach",
+            "Water",
+            "Shoreline"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (19).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Conifer",
+            "Wilderness",
+            "Nature",
+            "Outdoors",
+            "Land",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (20).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Conifer",
+            "Pine",
+            "Vegetation",
+            "Land",
+            "Outdoors",
+            "Nature",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "snow.JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Conifer",
+            "Outdoors",
+            "Nature"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "tree (13).JPG",
+        "tags": [
+            "Tree",
+            "Building",
+            "Grass",
+            "Vegetation",
+            "Scenery",
+            "Outdoors",
+            "Nature",
+            "Fir",
+            "Housing",
+            "Woodland"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "tree (14).JPG",
+        "tags": [
+            "Housing",
+            "Building",
+            "Architecture",
+            "House",
+            "Tree",
+            "Plant",
+            "Cottage",
+            "Outdoors",
+            "Nature"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "tree (23).JPG",
+        "tags": [
+            "Tree",
+            "Fir",
+            "Grassland",
+            "Field",
+            "Grass",
+            "Vegetation",
+            "Grove",
+            "Woodland",
+            "Land",
+            "Slope"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "water (3).JPG",
+        "tags": [
+            "Scenery",
+            "Outdoors",
+            "Nature",
+            "Reservoir",
+            "Water",
+            "Land",
+            "Field"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "water (4).JPG",
+        "tags": [
+            "Outdoors",
+            "Nature",
+            "Scenery",
+            "Land",
+            "Reservoir",
+            "Water",
+            "Promontory",
+            "Wilderness",
+            "Landscape"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "water (5).JPG",
+        "tags": [
+            "Reservoir",
+            "Outdoors",
+            "Nature",
+            "Water",
+            "Promontory",
+            "Lake",
+            "Scenery",
+            "Sea"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "water (6).JPG",
+        "tags": [
+            "Reservoir",
+            "Outdoors",
+            "Nature",
+            "Water",
+            "Scenery",
+            "Lake"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (23).jpg",
+        "tags": [
+            "Sky",
+            "Outdoors",
+            "Nature",
+            "Sunrise",
+            "Tree",
+            "Vegetation",
+            "Sun",
+            "Sunset",
+            "Street",
+            "Sunlight"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (24).jpg",
+        "tags": [
+            "Sky",
+            "Nature",
+            "Outdoors",
+            "Lighting",
+            "Cloud",
+            "Sunset",
+            "Sun",
+            "Sunrise",
+            "Landscape",
+            "Beach"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (25).jpg",
+        "tags": [
+            "Sky",
+            "Nature",
+            "Outdoors",
+            "City",
+            "Sunrise",
+            "Flare",
+            "Sunset",
+            "Urban",
+            "Sun",
+            "Metropolis"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "sky (26).jpg",
+        "tags": [
+            "Sky",
+            "Outdoors",
+            "Nature",
+            "Factory",
+            "Building",
+            "Architecture",
+            "Urban"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Amtrak",
+        "spec_location": "Transit Seattle"
+    },
+    {
+        "img": "animal (17).JPG",
+        "tags": [
+            "Building",
+            "Architecture",
+            "Bird",
+            "Animal",
+            "Tower",
+            "Space Needle",
+            "Landmark"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Space Needle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "tree (19).JPG",
+        "tags": [
+            "City",
+            "Office Building",
+            "Construction Crane",
+            "Construction",
+            "Metropolis",
+            "Urban",
+            "Traffic Light",
+            "Car",
+            "Road",
+            "Intersection"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Space Needle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "tree (20).JPG",
+        "tags": [
+            "Road",
+            "Tarmac",
+            "Metropolis",
+            "City",
+            "Urban",
+            "Intersection",
+            "Traffic Light",
+            "Zebra Crossing",
+            "Person",
+            "Car"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Space Needle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "tree (21).JPG",
+        "tags": [
+            "Road",
+            "Tarmac",
+            "Intersection",
+            "Metropolis",
+            "City",
+            "Urban",
+            "Traffic Light",
+            "Office Building",
+            "Neighborhood",
+            "Zebra Crossing"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Space Needle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "animal (20).JPG",
+        "tags": [
+            "Land",
+            "Outdoors",
+            "Nature",
+            "Waterfowl",
+            "Bird",
+            "Heron",
+            "Swamp",
+            "Water",
+            "Pond",
+            "Stork"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (21).JPG",
+        "tags": [
+            "Teal",
+            "Land",
+            "Nature",
+            "Outdoors",
+            "Pond",
+            "Water",
+            "Mallard",
+            "Bird",
+            "Waterfowl",
+            "Duck"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (22).JPG",
+        "tags": [
+            "Pond",
+            "Outdoors",
+            "Nature",
+            "Water",
+            "Land",
+            "Bird",
+            "Animal",
+            "Tree",
+            "Swamp",
+            "Waterfowl"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (23).JPG",
+        "tags": [
+            "Teal",
+            "Bird",
+            "Animal",
+            "Duck",
+            "Waterfowl",
+            "Outdoors",
+            "Mallard",
+            "Nature"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (24).JPG",
+        "tags": [
+            "Bird",
+            "Animal",
+            "Duck",
+            "Teal",
+            "Anseriformes",
+            "Waterfowl",
+            "Outdoors",
+            "Water",
+            "Nature",
+            "Mallard"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "leaves (1).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Tree"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "U Washington",
+        "spec_location": "UW"
+    },
+    {
+        "img": "leaves (2).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Tree",
+            "Tar",
+            "Insect",
+            "Invertebrate",
+            "Animal"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "U Washington",
+        "spec_location": "UW"
+    },
+    {
+        "img": "leaves (4).jpg",
+        "tags": [
+            "Path",
+            "Floor",
+            "Sidewalk",
+            "Leaf",
+            "Plant",
+            "Bench",
+            "Furniture",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "leaves (3).JPG",
+        "tags": [
+            "Vegetation",
+            "Grove",
+            "Woodland",
+            "Tree",
+            "Land",
+            "Jungle",
+            "Rainforest",
+            "Portrait",
+            "Photography",
+            "Leaf"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (19).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Fruit",
+            "Produce",
+            "Food",
+            "Flower"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (20).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Fruit",
+            "Produce",
+            "Food",
+            "Cherry"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (21).JPG",
+        "tags": [
+            "Purple",
+            "Bud",
+            "Plant",
+            "Flower",
+            "Sprout",
+            "Geranium",
+            "Fruit",
+            "Produce",
+            "Food"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (24).JPG",
+        "tags": [
+            "Fruit",
+            "Produce",
+            "Food",
+            "Plant",
+            "Cherry"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (25).JPG",
+        "tags": [
+            "Fruit",
+            "Produce",
+            "Food",
+            "Plant",
+            "Cherry"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "plant (26).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Fungus",
+            "Agaric",
+            "Mushroom"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "sky (21).JPG",
+        "tags": [
+            "Tree",
+            "Cumulus",
+            "Sky",
+            "Nature",
+            "Weather",
+            "Outdoors",
+            "Cloud",
+            "Fir",
+            "Land",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "sky (22).JPG",
+        "tags": [
+            "Land",
+            "Nature",
+            "Outdoors",
+            "Cumulus",
+            "Sky",
+            "Cloud",
+            "Weather",
+            "Pond",
+            "Water",
+            "Swamp"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (15).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Conifer",
+            "Fir",
+            "Larch",
+            "Summer",
+            "Bird",
+            "Animal",
+            "Sky",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (16).JPG",
+        "tags": [
+            "Tree",
+            "Vegetation",
+            "Tree Trunk",
+            "Leaf",
+            "Land",
+            "Outdoors",
+            "Nature",
+            "Woodland",
+            "Grass",
+            "Garden"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (17).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Tree",
+            "Maple"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (18).JPG",
+        "tags": [
+            "Flare",
+            "Light",
+            "Sunlight",
+            "Vegetation",
+            "Tree",
+            "Garden",
+            "Outdoors",
+            "Nature",
+            "Woodland",
+            "Land"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (22).JPG",
+        "tags": [
+            "Vegetation",
+            "Grove",
+            "Tree",
+            "Woodland",
+            "Land",
+            "Person",
+            "Teen",
+            "Girl",
+            "Female",
+            "Portrait"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (24).JPG",
+        "tags": [
+            "Moss",
+            "Plant",
+            "Tree",
+            "Vegetation",
+            "Tree Trunk",
+            "Rainforest",
+            "Land",
+            "Wilderness",
+            "Woodland",
+            "Conifer"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (25).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Leaf",
+            "Spoke",
+            "Machine",
+            "Maple",
+            "Car",
+            "Wheel",
+            "Coupe",
+            "Alloy Wheel"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (26).JPG",
+        "tags": [
+            "Pond",
+            "Nature",
+            "Outdoors",
+            "Water",
+            "Tree",
+            "Park",
+            "Grass",
+            "Scenery",
+            "Fir",
+            "Vegetation"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (27).JPG",
+        "tags": [
+            "Pond",
+            "Outdoors",
+            "Nature",
+            "Water",
+            "Tree",
+            "Plant",
+            "Fir",
+            "Land",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (28).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Conifer",
+            "Leaf",
+            "Larch",
+            "Pollen",
+            "Fir"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (29).JPG",
+        "tags": [
+            "Fruit",
+            "Produce",
+            "Plant",
+            "Food",
+            "Persimmon"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (30).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Vegetation",
+            "Tree Trunk",
+            "Grove",
+            "Woodland",
+            "Land",
+            "Leaf",
+            "Scenery",
+            "Landscape"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (31).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Tree Trunk",
+            "Leaf",
+            "Vegetation",
+            "Car",
+            "Vehicle",
+            "Woodland",
+            "Wheel",
+            "Machine"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (32).JPG",
+        "tags": [
+            "Tree",
+            "Tree Trunk",
+            "Plant",
+            "Woodland",
+            "Vegetation",
+            "Outdoors",
+            "Nature",
+            "Land"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "tree (33).JPG",
+        "tags": [
+            "Vegetation",
+            "Tree Trunk",
+            "Tree",
+            "Grove",
+            "Woodland",
+            "Land",
+            "Outdoors",
+            "Park",
+            "Grass",
+            "Ground"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (18).JPG",
+        "tags": [
+            "Finch",
+            "Bird",
+            "Animal",
+            "Anthus"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Apartment",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "animal (19).JPG",
+        "tags": [
+            "Bird",
+            "Animal",
+            "Duck",
+            "Waterfowl"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Arboretum",
+        "spec_location": "Seattle Arboretum"
+    },
+    {
+        "img": "animal (11).jpg",
+        "tags": [
+            "Sidewalk",
+            "Path",
+            "Bird",
+            "Animal",
+            "License Plate",
+            "Vehicle",
+            "Transportation",
+            "Car",
+            "Pigeon"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "animal (12).jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Alloy Wheel",
+            "Wheel",
+            "Tire",
+            "Car",
+            "Car Wheel",
+            "Sidewalk",
+            "Path",
+            "Bird"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "animal (13).jpg",
+        "tags": [
+            "Spoke",
+            "Machine",
+            "Alloy Wheel",
+            "Wheel",
+            "Tire",
+            "Car",
+            "Vehicle",
+            "Bird",
+            "Animal",
+            "Pigeon"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "animal (14).jpg",
+        "tags": [
+            "Alloy Wheel",
+            "Spoke",
+            "Wheel",
+            "Car",
+            "Tire",
+            "Machine",
+            "Path",
+            "Sidewalk",
+            "Bird",
+            "Slate"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "plant (16).jpg",
+        "tags": [
+            "Plant",
+            "Cactus"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "tree (12).jpg",
+        "tags": [
+            "Leaf",
+            "Tree",
+            "Maple",
+            "Vegetation",
+            "Scenery",
+            "Outdoors",
+            "Nature",
+            "Pond",
+            "Water",
+            "Person"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "tree (10).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Tree Trunk",
+            "Leaf",
+            "Car",
+            "Vehicle",
+            "Transportation",
+            "Scenery",
+            "Outdoors",
+            "Nature"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "tree (11).jpg",
+        "tags": [
+            "Neighborhood",
+            "City",
+            "Street",
+            "Road",
+            "Urban",
+            "Car",
+            "Shelter",
+            "Outdoors",
+            "Tree",
+            "Utility Pole"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "tree (9).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Leaf",
+            "Neighborhood",
+            "Shelter",
+            "Outdoors",
+            "Building",
+            "Architecture",
+            "Maple"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "plant (30).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Vegetation",
+            "Conifer",
+            "Garden",
+            "Outdoors",
+            "Nature",
+            "Woodland",
+            "Land"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "animal (29).jpg",
+        "tags": [
+            "Grass",
+            "Path",
+            "Park",
+            "Outdoors",
+            "Nature",
+            "Sidewalk",
+            "Tree",
+            "Person",
+            "Bird",
+            "Grassland"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (31).jpg",
+        "tags": [
+            "Bird",
+            "Animal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (32).jpg",
+        "tags": [
+            "Soil",
+            "Slate",
+            "Bird",
+            "Animal",
+            "Finch",
+            "Sparrow",
+            "Anthus"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (33).jpg",
+        "tags": [
+            "Soil",
+            "Finch",
+            "Bird",
+            "Animal",
+            "Leaf",
+            "Plant",
+            "Beak",
+            "Sparrow",
+            "Vegetation",
+            "Herbal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (34).jpg",
+        "tags": [
+            "Bird",
+            "Animal",
+            "Blackbird"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (35).jpg",
+        "tags": [
+            "Roof",
+            "Housing",
+            "Building",
+            "House",
+            "Architecture",
+            "Shelter",
+            "Outdoors",
+            "Bird",
+            "Animal",
+            "Wood"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "animal (30).JPG",
+        "tags": [
+            "Lizard",
+            "Animal",
+            "Reptile",
+            "Gecko",
+            "Rubble",
+            "Soil"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (50).jpg",
+        "tags": [
+            "Porch",
+            "Potted Plant",
+            "Patio",
+            "Pergola",
+            "Shelter",
+            "Garden",
+            "Person",
+            "Woman",
+            "Adult",
+            "Female"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Mezzos"
+    },
+    {
+        "img": "tree (51).jpg",
+        "tags": [
+            "Vegetation",
+            "Plant",
+            "Tree",
+            "City",
+            "Urban",
+            "Bush"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "tree (52).jpg",
+        "tags": [
+            "Tree Trunk",
+            "Tree",
+            "Plant",
+            "Villa",
+            "Housing",
+            "Building",
+            "Person",
+            "Monastery",
+            "Garden",
+            "Outdoors"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campanelli"
+    },
+    {
+        "img": "tree (53).jpg",
+        "tags": [
+            "Tree",
+            "Vegetation",
+            "Handrail",
+            "Railing",
+            "Path",
+            "Woodland",
+            "Park",
+            "Leaf",
+            "Grove",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "tree (54).jpg",
+        "tags": [
+            "Neighborhood",
+            "City",
+            "Bench",
+            "Furniture",
+            "Urban",
+            "Street",
+            "Road",
+            "Tree",
+            "Path",
+            "Person"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Courtyard"
+    },
+    {
+        "img": "tree (55).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Tree Trunk",
+            "Lamp",
+            "City",
+            "Urban",
+            "Neighborhood",
+            "Housing",
+            "Building",
+            "Architecture"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "J School"
+    },
+    {
+        "img": "plant (28).JPG",
+        "tags": [
+            "Path",
+            "Trail",
+            "Walkway",
+            "Vegetation",
+            "Moss",
+            "Garden",
+            "Slate",
+            "Tree",
+            "Flagstone",
+            "Jungle"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (29).JPG",
+        "tags": [
+            "Herbal",
+            "Herbs",
+            "Plant",
+            "Leaf",
+            "Vegetation",
+            "Business Card",
+            "Text",
+            "Paper"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (31).JPG",
+        "tags": [
+            "Vegetation",
+            "Plant",
+            "Petal",
+            "Flower",
+            "Herbal",
+            "Tree",
+            "Rainforest",
+            "Araceae",
+            "Woodland",
+            "Flower Arrangement"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (32).JPG",
+        "tags": [
+            "Fruit",
+            "Produce",
+            "Food",
+            "Plant",
+            "Apple",
+            "Cherry"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (33).JPG",
+        "tags": [
+            "Vegetation",
+            "Plant",
+            "Fence",
+            "Garden",
+            "Nature",
+            "Outdoors",
+            "Tree",
+            "Land"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (34).JPG",
+        "tags": [
+            "Fence",
+            "Vegetation",
+            "Plant",
+            "Nature",
+            "Outdoors",
+            "Grass",
+            "Grassland",
+            "Field"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (35).JPG",
+        "tags": [
+            "People",
+            "Grass",
+            "Sphere",
+            "Tennis Ball",
+            "Glove",
+            "Field",
+            "Baseball Glove",
+            "Lawn",
+            "Team Sport",
+            "Team"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (36).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Conifer",
+            "Vegetation",
+            "Summer",
+            "Agavaceae",
+            "Grass",
+            "Flower"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (37).JPG",
+        "tags": [
+            "Gourd",
+            "Produce",
+            "Food",
+            "Vegetable",
+            "Plant",
+            "Porch",
+            "Housing",
+            "House",
+            "Building",
+            "Pear"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (38).JPG",
+        "tags": [
+            "Gourd",
+            "Produce",
+            "Food",
+            "Vegetable",
+            "Plant",
+            "Pear",
+            "Fruit"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (39).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Conifer",
+            "Bird",
+            "Animal",
+            "Vegetation"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (40).JPG",
+        "tags": [
+            "Grass",
+            "Plant",
+            "Flower",
+            "Bud",
+            "Sprout",
+            "Vegetation",
+            "Petal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (41).JPG",
+        "tags": [
+            "Plant",
+            "Cactus",
+            "Person"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (42).JPG",
+        "tags": [
+            "Cactus",
+            "Plant"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (35).JPG",
+        "tags": [
+            "Slope",
+            "Tree",
+            "Plant",
+            "Road",
+            "Vegetation",
+            "Wilderness",
+            "Nature",
+            "Outdoors",
+            "Soil",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (43).JPG",
+        "tags": [
+            "Road",
+            "Tarmac",
+            "Freeway",
+            "Highway",
+            "Car",
+            "Vehicle",
+            "Transportation"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (44).JPG",
+        "tags": [
+            "Vegetation",
+            "Woodland",
+            "Tree",
+            "Land",
+            "Grove",
+            "Sunlight",
+            "Jungle",
+            "Leaf",
+            "Path",
+            "Scenery"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (45).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Leaf",
+            "Tree Trunk",
+            "Summer",
+            "Flower",
+            "Vegetation"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (46).JPG",
+        "tags": [
+            "Tree",
+            "Tree Trunk",
+            "Vegetation",
+            "Woodland",
+            "Land",
+            "Nature",
+            "Outdoors",
+            "Rainforest",
+            "Leaf",
+            "Garden"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (48).JPG",
+        "tags": [
+            "Shelter",
+            "Outdoors",
+            "Hut",
+            "Nature",
+            "Countryside",
+            "Vegetation",
+            "Garden",
+            "Arbour",
+            "Jungle",
+            "Rainforest"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "water.JPG",
+        "tags": [
+            "Pond",
+            "Nature",
+            "Outdoors",
+            "Water",
+            "Land",
+            "Swamp",
+            "Person",
+            "Vegetation",
+            "Plant",
+            "Flower"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "plant (27).JPG",
+        "tags": [],
+        "date": "",
+        "city": "Emeryville",
+        "location": "Plaza",
+        "spec_location": "Emeryville"
+    },
+    {
+        "img": "tree (38).JPG",
+        "tags": [
+            "Summer",
+            "Garden",
+            "Outdoors",
+            "Nature",
+            "Palm Tree",
+            "Tree",
+            "Porch",
+            "Arbour",
+            "Patio",
+            "Pergola"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "Plaza",
+        "spec_location": "Emeryville"
+    },
+    {
+        "img": "tree (39).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Car",
+            "Vehicle",
+            "Transportation",
+            "Tree Trunk",
+            "Sign",
+            "Symbol"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "Bus",
+        "spec_location": "Transit Norcal"
+    },
+    {
+        "img": "tree (40).JPG",
+        "tags": [
+            "Bus",
+            "Vehicle",
+            "Transportation",
+            "Person"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "Bus",
+        "spec_location": "Transit Norcal"
+    },
+    {
+        "img": "tree (41).JPG",
+        "tags": [
+            "Tree",
+            "Sunlight",
+            "Flare",
+            "Light",
+            "Tree Trunk",
+            "Vegetation",
+            "Grove",
+            "Outdoors",
+            "Woodland",
+            "Road"
+        ],
+        "date": "",
+        "city": "Emeryville",
+        "location": "Bus",
+        "spec_location": "Transit Norcal"
+    },
+    {
+        "img": "tree (42).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Leaf",
+            "Tree Trunk",
+            "City"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment Outside"
+    },
+    {
+        "img": "leaves.JPG",
+        "tags": [
+            "Street",
+            "City",
+            "Urban",
+            "Path",
+            "Sidewalk",
+            "Bench",
+            "Leaf",
+            "Tree",
+            "Floor",
+            "Grass"
+        ],
+        "date": "",
+        "city": "Stanford",
+        "location": "Campus",
+        "spec_location": "Stanford"
+    },
+    {
+        "img": "pumpkin.JPG",
+        "tags": [
+            "Sidewalk",
+            "Path",
+            "Walkway",
+            "Road",
+            "Street",
+            "City",
+            "Urban",
+            "Car",
+            "Flagstone",
+            "Floor"
+        ],
+        "date": "",
+        "city": "Stanford",
+        "location": "Campus",
+        "spec_location": "Stanford"
+    },
+    {
+        "img": "sky (6).JPG",
+        "tags": [
+            "Office Building",
+            "Building",
+            "Architecture",
+            "Handrail",
+            "Metropolis",
+            "Urban",
+            "City",
+            "Window",
+            "Convention Center"
+        ],
+        "date": "",
+        "city": "Stanford",
+        "location": "Campus",
+        "spec_location": "Stanford"
+    },
+    {
+        "img": "sky (7).JPG",
+        "tags": [
+            "Light",
+            "Traffic Light",
+            "Bird",
+            "Animal"
+        ],
+        "date": "",
+        "city": "Stanford",
+        "location": "Campus",
+        "spec_location": "Stanford"
+    },
+    {
+        "img": "sky (8).JPG",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Fir",
+            "Office Building",
+            "Building",
+            "City",
+            "Urban",
+            "Car",
+            "Conifer",
+            "Pine"
+        ],
+        "date": "",
+        "city": "Stanford",
+        "location": "Campus",
+        "spec_location": "Stanford"
+    },
+    {
+        "img": "plant (22).JPG",
+        "tags": [
+            "Rose",
+            "Flower",
+            "Plant",
+            "Flower Arrangement",
+            "Flower Bouquet",
+            "Petal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "plant (23).JPG",
+        "tags": [
+            "Rose",
+            "Flower",
+            "Plant",
+            "Flower Arrangement",
+            "Flower Bouquet",
+            "Petal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "grass (2).JPG",
+        "tags": [
+            "Grass",
+            "Park",
+            "Outdoors",
+            "Nature",
+            "Lawn",
+            "Palm Tree",
+            "Tree",
+            "Person",
+            "Field",
+            "Chair"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "plant (10).JPG",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Bud",
+            "Sprout",
+            "Flower",
+            "Grass",
+            "Pollen"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "plant (12).JPG",
+        "tags": [
+            "Geranium",
+            "Flower",
+            "Plant",
+            "Acanthaceae",
+            "Petal"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "plant (13).JPG",
+        "tags": [
+            "Geranium",
+            "Flower",
+            "Plant",
+            "Acanthaceae",
+            "Petal",
+            "Rose",
+            "Leaf"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "plant (14).JPG",
+        "tags": [
+            "Geranium",
+            "Flower",
+            "Plant",
+            "Petal",
+            "Rose",
+            "Acanthaceae"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "plant (6).JPG",
+        "tags": [
+            "Plant"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "plant (7).JPG",
+        "tags": [
+            "Plant",
+            "Sea",
+            "Outdoors",
+            "Nature",
+            "Reef",
+            "Moss",
+            "Coral Reef",
+            "Vegetation",
+            "Grass",
+            "Pollen"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "plant (8).JPG",
+        "tags": [
+            "Moss",
+            "Plant",
+            "Vegetation",
+            "Grass",
+            "Leaf",
+            "Tree",
+            "Flower",
+            "Outdoors",
+            "Nature"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "plant (9).JPG",
+        "tags": [
+            "Bud",
+            "Plant",
+            "Flower",
+            "Sprout",
+            "Leaf",
+            "Pollen"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Salesforce Tower",
+        "spec_location": "Salesforce Tower"
+    },
+    {
+        "img": "tree (6).JPG",
+        "tags": [
+            "Coat",
+            "Grass",
+            "Person",
+            "Woman",
+            "Adult",
+            "Female",
+            "Hood",
+            "Alloy Wheel",
+            "Car",
+            "Hoodie"
+        ],
+        "date": "",
+        "city": "San Francisco",
+        "location": "Golden Gate Park",
+        "spec_location": "Golden Gate Park"
+    },
+    {
+        "img": "bug (1).JPG",
+        "tags": [
+            "Animal",
+            "Insect",
+            "Invertebrate"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "bug (2).JPG",
+        "tags": [
+            "Wasp",
+            "Insect",
+            "Animal",
+            "Invertebrate",
+            "Bee"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "bug (3).JPG",
+        "tags": [
+            "Insect",
+            "Invertebrate",
+            "Animal",
+            "Bathtub",
+            "Tub",
+            "Person",
+            "Bathing"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "bug (4).JPG",
+        "tags": [
+            "Insect",
+            "Animal",
+            "Invertebrate",
+            "Cricket Insect",
+            "Apidae",
+            "Bee"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (3).jpg",
+        "tags": [
+            "Tree",
+            "Plant",
+            "Outdoors",
+            "Cat",
+            "Pet",
+            "Mammal",
+            "Animal"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (4).jpg",
+        "tags": [
+            "Wheel",
+            "Machine",
+            "Alloy Wheel",
+            "Tire",
+            "Spoke",
+            "Car Wheel",
+            "Vehicle",
+            "Transportation",
+            "Car"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (5).jpg",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Tree"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment",
+        "spec_location": "Apartment"
+    },
+    {
+        "img": "animal (6).jpg",
+        "tags": [
+            "Bird",
+            "Animal",
+            "Pigeon"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Downton",
+        "spec_location": "Downton"
+    },
+    {
+        "img": "animal (7).jpg",
+        "tags": [
+            "Bird",
+            "Animal",
+            "Path",
+            "Sidewalk",
+            "Pigeon"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Downton",
+        "spec_location": "Downton"
+    },
+    {
+        "img": "leaves (5).jpg",
+        "tags": [
+            "Shoe",
+            "Footwear",
+            "Clothing",
+            "Sneaker",
+            "Petal",
+            "Plant",
+            "Flower",
+            "Pants",
+            "Leaf",
+            "Person"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Seattle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "leaves (6).jpg",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Shoe",
+            "Footwear",
+            "Clothing",
+            "Sneaker",
+            "Tree",
+            "Autumn",
+            "Person",
+            "Pants"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Seattle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "leaves (7).jpg",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Shoe",
+            "Footwear",
+            "Sneaker",
+            "Petal",
+            "Tree",
+            "Person",
+            "Purple",
+            "Pants"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Seattle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "leaves (8).jpg",
+        "tags": [
+            "Shoe",
+            "Leaf",
+            "Sneaker",
+            "Petal",
+            "Tree",
+            "Portrait",
+            "Photography",
+            "Pants",
+            "Soil",
+            "Grass"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Seattle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "leaves (9).jpg",
+        "tags": [
+            "Leaf",
+            "Plant",
+            "Shoe",
+            "Footwear",
+            "Sneaker",
+            "Tree",
+            "Pants",
+            "Petal",
+            "Person",
+            "Maple"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Seattle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "sky (9).jpg",
+        "tags": [
+            "Grass",
+            "Lawn",
+            "Bell Tower",
+            "Building",
+            "Monastery",
+            "Park",
+            "Clock Tower",
+            "Grassland",
+            "Field",
+            "Person"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Campus",
+        "spec_location": "Campus"
+    },
+    {
+        "img": "tree (34).jpg",
+        "tags": [
+            "Car",
+            "Vehicle",
+            "Transportation",
+            "Person",
+            "Tower",
+            "Building",
+            "Architecture",
+            "Landmark"
+        ],
+        "date": "",
+        "city": "Seattle",
+        "location": "Space Needle",
+        "spec_location": "Seattle"
+    },
+    {
+        "img": "tree (36).jpg",
+        "tags": [
+            "Tree",
+            "Vegetation",
+            "Grove",
+            "Woodland",
+            "Land",
+            "Outdoors",
+            "Leaf",
+            "Jungle",
+            "Rainforest",
+            "Landscape"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Botanical Garden",
+        "spec_location": "Botanical Garden"
+    },
+    {
+        "img": "tree (37).jpg",
+        "tags": [
+            "Path",
+            "Sidewalk",
+            "Street",
+            "City",
+            "Road",
+            "Urban",
+            "Tree",
+            "Neighborhood",
+            "Tree Trunk",
+            "Tarmac"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Southside",
+        "spec_location": "Southside"
+    },
+    {
+        "img": "tree (47).jpg",
+        "tags": [
+            "Vegetation",
+            "Grove",
+            "Tree",
+            "Woodland",
+            "Land",
+            "Leaf",
+            "City",
+            "Jungle",
+            "Urban",
+            "Oak"
+        ],
+        "date": "",
+        "city": "Berkeley",
+        "location": "Apartment Courtyard",
+        "spec_location": "Apartment Courtyard"
+    }
+]

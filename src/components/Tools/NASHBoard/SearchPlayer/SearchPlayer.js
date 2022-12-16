@@ -40,8 +40,6 @@ const SearchPlayer = () => {
     // HANDLE ALL FILTERS //
     // update search matched players when ANY search term/filter changes
     useEffect(() => {
-        // setMatchedPlayers(searchPlayer())
-        // console.log('new queries',minGames, searchTerm,selectedFilter);
         setMatchedPlayers(runFilters())
     }, [searchTerm, selectedFilter, minGames]);
 
@@ -50,7 +48,7 @@ const SearchPlayer = () => {
         let filteredPlayers;
         // 1) filter for number of games
         filteredPlayers = changeMinGames();
-        console.log(filteredPlayers);
+        // console.log(filteredPlayers);
 
         // 2) filter by search query
         filteredPlayers = searchPlayer(filteredPlayers);

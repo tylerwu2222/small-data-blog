@@ -13,7 +13,7 @@ const getCurrentWeek = () => {
     let curr = new Date;
     // first day of week = current day (1-31) - day of week (0-6) [0 is Sunday]
     let first = curr.getDate() - curr.getDay() + 1;
-    let last = first + 6 + 1; // last day is the first day + 6
+    let last = first + 6; // last day is the first day + 6
 
     let lastday = new Date(curr.setDate(last)).toISOString().split('T')[0];
     let firstday = new Date(curr.setDate(first)).toISOString().split('T')[0];
