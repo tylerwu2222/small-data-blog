@@ -3,7 +3,7 @@ import { AutoPlayLoopVid } from '../../Media/AutoPlayLoopVid/AutoPlayLoopVid.js'
 import SmallImage from '../../Media/SmallImage.js'
 import CaptionText from '../../Media/CaptionText.js';
 import DividerSymbol from './DividerSymbol.js';
-import TwilightZone from './TwilightZone.js';
+import TwilightZone from '../Modules/TwilightZone.js';
 
 import image_data from './Data/image_data_complete.json';
 
@@ -11,9 +11,18 @@ import image_data from './Data/image_data_complete.json';
 document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
 
 
-// const img_folder = './BlogPosts/BerkeleyNature/Images/'
-const img_folder = './Images/';
-const vid_folder = './Videos/';
+// const { Storage } = require("@google-cloud/storage");
+
+const keys = '../../scripts/api_keys.json';
+const key = keys['NatureInNorcalBucket'];
+console.log('key', key);
+// const storage = new Storage({ keyFilename: "google-cloud-key.json" });
+// console.log('storage',storage);
+
+const img_folder = '/img/blog_posts/BerkeleyNature/Images/'
+// const img_folder = './Images/';
+const vid_folder = '/img/blog_posts/BerkeleyNature/Videos/';
+// const vid_folder = './Videos/';
 
 const get_spec_images = (cat) => {
     return image_data.filter(i => i.spec_location == cat).map(i => i.img)
@@ -47,7 +56,8 @@ const BerkeleyNature = ({ page }) => {
         <>
 
             <h1 className="h1-heading-title" style={{ paddingTop: "50px", marginTop: "-30px" }}>Nature in NorCal</h1>
-            <img className="img-wide" src={require(img_folder + "berkeley_nature_long.png")} alt="berk-nature-tn" />
+            {/* <img className="img-wide" src={require(img_folder + "berkeley_nature_long.png")} alt="berk-nature-tn" /> */}
+            <img className="img-wide" src={img_folder + "berkeley_nature_long.png"} alt="berk-nature-tn" />
 
             {/* <div class="container-narrow-green-bg"> */}
             <p style={{ whiteSpace: "pre-line" }}></p>
@@ -63,7 +73,7 @@ const BerkeleyNature = ({ page }) => {
                     In this photo essay-slash-journal-entry,
                     I've aggregated all the nature-related pictures, videos, and media I've taken since arriving here.
                 </p>
-                <p className='scrollable-p-graf' style={{fontSize: 'small'}}>
+                <p className='scrollable-p-graf' style={{ fontSize: 'small' }}>
                     In the future, I also plan to add some fun stats about the pictures (object recognition stuff),
                     and a few deep dives on certain animal & plant species.
                 </p>
@@ -75,7 +85,8 @@ const BerkeleyNature = ({ page }) => {
             </div>
             <h1 className='h1-heading'>PLACES</h1>
             <section className='scrollable-section'>
-                <AutoPlayLoopVid classes='sticky-vid' vidSrc={require(vid_folder + "water (1).mp4")} />
+                <AutoPlayLoopVid classes='sticky-vid' vidSrc={vid_folder + "water (1).mp4"} />
+                {/* <AutoPlayLoopVid classes='sticky-vid' vidSrc={require(vid_folder + "water (1).mp4")} /> */}
                 <div className='scrollable-div-first blue-div centered-div'>
                     <h2 id="section1" className="h2-heading">The Marina</h2>
                     <p className='scrollable-p-graf'>The first place I visited this semester was the Berkeley Marina.
@@ -101,7 +112,8 @@ const BerkeleyNature = ({ page }) => {
                             <div className='table-row-div'>
                                 <div className='table-cell-div'>
                                     <li>lots of well-fed ground squirrels</li>
-                                    <SmallImage fileName={require(img_folder + 'animal (1).jpg')} />
+                                    <SmallImage fileName={img_folder + 'animal (1).jpg'} />
+                                    {/* <SmallImage fileName={require(img_folder + 'animal (1).jpg')} /> */}
                                     <CaptionText
                                         text={'(Fig. 1) I only happened to get one picture of the squirrels,\
                                         and this one was actually looking very malnourished. \
@@ -110,7 +122,8 @@ const BerkeleyNature = ({ page }) => {
                                 </div>
                                 <li>Trees & Waves</li>
                                 {marina_images.map(i =>
-                                    <SmallImage fileName={require('' + img_folder + i)} />
+                                    // <SmallImage fileName={require('' + img_folder + i)} />
+                                    <SmallImage fileName={img_folder + i} />
                                 )}
                             </div>
                         </ul>
@@ -128,7 +141,8 @@ const BerkeleyNature = ({ page }) => {
                         The next place I ended up visiting was Berkeley's Botanical Garden.
                     </p>
                 </div>
-                <AutoPlayLoopVid classes="sticky-vid" vidSrc={require(vid_folder + "plant (2).mp4")} />
+                <AutoPlayLoopVid classes="sticky-vid" vidSrc={vid_folder + "plant (2).mp4"} />
+                {/* <AutoPlayLoopVid classes="sticky-vid" vidSrc={require(vid_folder + "plant (2).mp4")} /> */}
                 <div className='scrollable-div red-div left-div'>
                     <h2 id="section2" className="h2-heading">The Botanical Garden</h2>
                     <p className='scrollable-p-graf'>I've only visited the garden once this year in the winter.
@@ -143,20 +157,27 @@ const BerkeleyNature = ({ page }) => {
                     <p className='scrollable-p-graf'>
                         It was like seeing professional athletes in the offseason,
                         or actors backstage after the play.
-                        It was still an enjoyable visit nonetheless.
+                        It was an enjoyable visit nonetheless.
                     </p>
                 </div>
                 <div className='scrollable-div red-div right-div'>
-                    <p className='scrollable-p-graf'>Walking there was also bit of a hike, but I'd say it was worth it.</p>
-                    <AutoPlayLoopVid classes="vid-med centered-vid" vidSrc={require(vid_folder + "sky (2).MOV")} />
+                    <p className='scrollable-p-graf'>Walking there was also bit of a hike, but I'd say it was worth it. (Ignore the fact that this video is of me walking back).</p>
+                    <AutoPlayLoopVid classes="vid-med centered-vid" vidSrc={vid_folder + "sky (2).MOV"} />
+                    {/* <AutoPlayLoopVid classes="vid-med centered-vid" vidSrc={require(vid_folder + "sky (2).MOV")} /> */}
                 </div>
                 <div className='scrollable-div wide-div'>
                     <div className='scrollable-div black-div'>
-                        <p style={{ padding: '1px', margin: '1px' }}>Unfortunately, the houses (tropical, carnivorous) all closed at 4pm. So I was unable to get pictures of the best plants.</p>
-                        <p style={{ padding: '1px', margin: '1px' }}>I did get quite a bit though, from the 30 minutes I was there.</p>
+                        <p style={{ padding: '1px', margin: '1px' }}>
+                            Unfortunately, the collection houses (arid, carnivorous) all closed at 4pm.
+                            So I was unable to get pictures of some of the most interesting plants.
+                        </p>
+                        <p style={{ padding: '1px', margin: '1px' }}>
+                            I still got some decent pictures though from the 30 minutes I was there.
+                        </p>
                     </div>
                     {botanical_garden_images.map(i =>
-                        <SmallImage fileName={require('' + img_folder + i)} />
+                        <SmallImage fileName={img_folder + i} />
+                        // <SmallImage fileName={require('' + img_folder + i)} />
                     )}
                 </div>
             </section>
@@ -166,35 +187,48 @@ const BerkeleyNature = ({ page }) => {
             <TwilightZone />
 
             <section className='scrollable-section'>
-                <AutoPlayLoopVid vidSrc={require(vid_folder + "sky (2).mp4")} />
-                <h2 id="section2" className="h2-heading">The Golden Gate Garden (SF)</h2>
-                <p>
-                    "This is a pretty huge park" - me.
-                    I visited once when it was sunny and once when it was raining,
-                    both times, there were quite a few flowers.
-                </p>
-                <p>
-                    Like many places in SF, it felt like we really needed a car,
-                    or at the very least bikes to get around.
-                    Things felt very spread out and condensed at the same time.
-                </p>
-                <p>
-                    The first time I went, we visited the Rose Garden.
-                    The second time we wanted to visit the Japanese tea garden.
-                    Unfortunatley, we got there 5 minutes after their last entry.
-                </p>
-                {SF_garden_images0.map(i =>
-                    <SmallImage fileName={require('' + img_folder + i)} />
-                )}
-                {SF_garden_images.map(i =>
-                    <SmallImage fileName={require('' + img_folder + i)} />
-                )}
+                <AutoPlayLoopVid classes="sticky-vid" vidSrc={vid_folder + "call.MOV"} />
+                {/* <AutoPlayLoopVid classes="sticky-vid" vidSrc={require(vid_folder + "call.MOV")} /> */}
+                <div className='scrollable-div gold-div right-div'>
+                    <h2 id="section2" className="h2-heading">The Golden Gate Garden (SF)</h2>
+                    <p>
+                        "This is a pretty huge park" - me.
+                        I visited once when it was sunny and once when it was raining,
+                        both times, I wish I had my skateboard (or a bike).
+                    </p>
+                </div>
+                <div className='scrollable-div gold-div right-div'>
+                    <p>
+                        Like a few other places in SF, it felt like we really needed a car.
+                        Things felt very spread out and condensed at the same time.
+                    </p>
+                </div>
+                <div className='scrollable-div gold-div right-div'>
+                    <p>
+                        The first time I went, we visited the Rose Garden and I took a total of one nature-related picture.
+                        The second time we wanted to visit the Japanese tea garden.
+                        Unfortunatley, we got there 5 minutes after their last entry.
+                    </p>
+                </div>
+                <div className='scrollable-div gold-div left-div'>
+                    {SF_garden_images0.map(i =>
+                        <SmallImage fileName={img_folder + i} />
+                        // <SmallImage fileName={require('' + img_folder + i)} />
+                    )}
+                </div>
+                <div className='scrollable-div gold-div centered-div'>
+                    {SF_garden_images.map(i =>
+                        <SmallImage fileName={img_folder + i} />
+                        // <SmallImage fileName={require('' + img_folder + i)} />
+                    )}
+                </div>
             </section>
 
             <DividerSymbol />
 
             <section className='scrollable-section'>
-                <AutoPlayLoopVid vidSrc={require(vid_folder + "snow.MOV")} />
+                <AutoPlayLoopVid vidSrc={vid_folder + "snow.MOV"} />
+                {/* <AutoPlayLoopVid vidSrc={require(vid_folder + "snow.MOV")} /> */}
                 <h2 id="section3" className="h2-heading">Seattle: a Detour.</h2>
                 <p>Over thanksgiving break, my sister and I visited ~two Victors~ in Seattle
                     One, my cousin, finisheing his post-doc in physiological ecology
@@ -212,7 +246,8 @@ const BerkeleyNature = ({ page }) => {
                     The prettiest place we visited, the Arboretum, was completely free.
                 </p>
                 {seattle_arboretum_images.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )
                 }
                 <p>Things I could capture:</p>
@@ -226,7 +261,8 @@ const BerkeleyNature = ({ page }) => {
             <DividerSymbol />
 
             <section className='scrollable-section'>
-                <AutoPlayLoopVid vidSrc={require(vid_folder + "animal (6).mp4")} />
+                <AutoPlayLoopVid vidSrc={vid_folder + "animal (6).mp4"} />
+                {/* <AutoPlayLoopVid vidSrc={require(vid_folder + "animal (6).mp4")} /> */}
                 <h2 id="section4" className="h2-heading">Back to Berkeley</h2>
                 <p>Returning to Berkeley... something I noticed was that
                     I relaxed a bit, untensing the shoulders, letting out a big sigh,
@@ -236,26 +272,31 @@ const BerkeleyNature = ({ page }) => {
                     Sometimes nature can be found inside as well.
                 </p>
                 {berk_apartment_images0.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )}
                 <p>
                     I tried capturing time through daily images through my window.
                 </p>
 
                 {berk_apartment_daily_images.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )}
 
                 {berk_apartment_images1.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )}
                 <p>Also near the apartment</p>
                 {berk_apartment_images2.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )}
                 <p>And of course on campus</p>
                 {berk_campus_images.map(i =>
-                    <SmallImage fileName={require("" + img_folder + i)} />
+                    <SmallImage fileName={img_folder + i} />
+                    // <SmallImage fileName={require("" + img_folder + i)} />
                 )}
                 <p>
                     I didn't like it much at first, it felt like a chaotic place.

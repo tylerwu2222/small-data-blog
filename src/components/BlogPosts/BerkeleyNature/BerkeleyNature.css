@@ -3,6 +3,7 @@
     --color-dark-green: #597a43;
 	--color-blue: #537c9d;
     --color-red: #D64B3A;
+    --color-gold: #d6b73a;
     --color-white: antiquewhite;
     --color-grey: rgb(216, 202, 185);
 }
@@ -70,6 +71,10 @@ h1, h2, p{
 
 .red-div{
     background-color: var(--color-red);
+}
+
+.gold-div{
+    background-color: var(--color-gold);
 }
 
 .black-div{

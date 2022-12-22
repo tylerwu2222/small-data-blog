@@ -7,11 +7,13 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@google-cloud/storage": "^6.8.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "basketball-reference-js": "^0.2.6",
     "d3": "^7.7.0",
+    "fs": "^0.0.1-security",
     "nba": "^4.15.0",
     "nba-api-client": "^1.1.1",
     "nedb": "^1.8.0",
@@ -22,6 +24,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-visibility-sensor": "^5.1.1",
+    "stream": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

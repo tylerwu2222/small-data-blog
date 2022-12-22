@@ -1,7 +1,13 @@
-const SmallImage = ({fileName}) => {
+import { lazy, Suspense } from "react";
+
+const SmallImage = ({ fileName }) => {
     return (
-        <img className="img-small" src={fileName} alt={fileName}>
-        </img>
+        <Suspense fallback={
+            <p>loading...</p>
+        }>
+            <img className="img-small" src={fileName} alt={fileName}>
+            </img>
+        </Suspense>
     )
 }
 
