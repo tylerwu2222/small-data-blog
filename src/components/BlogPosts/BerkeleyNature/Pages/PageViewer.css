@@ -1,0 +1,43 @@
+.page-viewer-div{
+    margin-top: -20px;
+}
+
+
+/* next-prev arrows */
+.carousel-prev-arrow,
+.carousel-next-arrow{
+    position:sticky;
+    top: 50%;
+    width: fit-content;
+
+    z-index: 3;
+    background-color: rgb(66, 66, 66);
+    opacity: 80%;
+    border-radius: 5px;
+    
+    transition: 0.3s;
+}
+
+.carousel-prev-arrow:hover,
+.carousel-next-arrow:hover{
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.2);
+}
+
+.carousel-prev-arrow>p,
+.carousel-next-arrow>p{
+    margin: 5px;
+}
+
+.carousel-next-arrow{
+    left: 95%;
+}
+.carousel-prev-arrow{
+    left: 5%
+}
+
+/* visibility */
+.hidden{
+    visibility: hidden;
+}

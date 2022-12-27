@@ -2,8 +2,10 @@
 	--color-green: #74a056;
     --color-dark-green: #597a43;
 	--color-blue: #537c9d;
+    --color-berkeley-blue: #3B7EA1;
     --color-red: #D64B3A;
     --color-gold: #d6b73a;
+    --color-purple: #4b2e83;
     --color-white: antiquewhite;
     --color-grey: rgb(216, 202, 185);
 }
@@ -54,6 +56,7 @@ h1, h2, p{
 }
 
 .scrollable-div, 
+.scrollable-title-div,
 .scrollable-div-first,
 .scrollable-div-last
 {
@@ -69,12 +72,20 @@ h1, h2, p{
     background-color: var(--color-blue);
 }
 
+.blue2-div{
+    background-color: var(--color-berkeley-blue);
+}
 .red-div{
     background-color: var(--color-red);
 }
 
 .gold-div{
     background-color: var(--color-gold);
+    color: black;
+}
+
+.purple-div{
+    background-color: var( --color-purple);
 }
 
 .black-div{
@@ -83,8 +94,22 @@ h1, h2, p{
     /* padding: 0px; */
 }
 
+/* not moving up enough capped at 100 */
+
+.scrollable-title-div{
+    opacity: 100%;
+    width: fit-content;
+    display: block;
+    /* width: 30vw; */
+    border-radius: 0;
+    margin: auto;
+    margin-top: -60vh;
+
+}
+
 .scrollable-div-first{
-    margin-top: -75vh;
+    display: inline-block;
+    margin-top: 60vh;
 }
 
 .scrollable-div-last,
@@ -93,13 +118,28 @@ h1, h2, p{
 }
 
 .scrollable-div-last{
-    margin-bottom: 75vh;
+    margin-bottom: 20vh;
 }
 
+.centered-div-fixed,
 .centered-div{
-    margin-left: 30vw;
-    margin-right: calc(30vw - var(--scrollbar-width));
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 30vw;
+    margin-right: calc(30vw - var(--scrollbar-width)); */
 }
+
+.centered-div-fixed{
+    padding: 15px;
+    width: 50vw;
+}
+
+.centered-div-fixed>p{
+    margin: 0;
+}
+
 .wide-div{
     margin-left: 10vw;
     margin-right: calc(10vw - var(--scrollbar-width));
@@ -122,6 +162,7 @@ h1, h2, p{
 .table-cell-div{
     display: table-cell;
 }
+
 /* color stylings  */
 #berkeley-nature-div,
 .navbar,
@@ -201,6 +242,15 @@ h1, h2, p{
     position: sticky;
     top: 10px;
     z-index: 1;
+}
+
+/* image & vid animations */
+.img-small{
+    transition: 0.2s;
+}
+
+.img-small:hover{
+    transform: scale(1.1);
 }
 
 
