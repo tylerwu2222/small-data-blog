@@ -1,11 +1,11 @@
 import { lazy, Suspense } from "react";
 
-const SmallImage = ({ fileName, classes = '', hoverText= '' }) => {
+const MedImage = ({ fileName, classes = '', hoverText= '' }) => {
     return (
         <Suspense fallback={
             <p>loading...</p>
         }>
-            <img className={'img-small' + classes}
+            <img className={'img-med' + classes}
                 src={fileName}
                 alt={fileName}
                 // title={fileName}
@@ -16,4 +16,4 @@ const SmallImage = ({ fileName, classes = '', hoverText= '' }) => {
     )
 }
 
-export default SmallImage;
+export default MedImage;

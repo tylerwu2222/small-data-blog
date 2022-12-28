@@ -10,14 +10,20 @@
     --color-grey: rgb(216, 202, 185);
 }
 
+/* high-level visibility */
+/* .navbar, */
+.footer{
+    display: none;
+}
+
 /* text */
 .h1-heading-title,
 .h1-heading{
     margin-left: auto;
     margin-right: auto;
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: dotted;
-    border-color: var(--color-grey);
+    border-color: var(--color-grey); */
     text-align: center;
 }
 
@@ -32,6 +38,8 @@ p{
 }
 
 h1, h2, p{
+    /* font-family: 'Baskerville Old Face', 'Times New Roman', Times, serif; */
+    /* font-family: 'Times New Roman', Times, serif; */
     position: relative;
     z-index: 3;
     /* background-color: red; */
@@ -39,7 +47,8 @@ h1, h2, p{
 
 .scrollable-p-graf{
     width: 30vw;
-    padding: 10px 5vw;
+    padding: 10px;
+    margin: 0;
 }
 
 .p-graf-centered{
@@ -114,7 +123,7 @@ h1, h2, p{
 
 .scrollable-div-last,
 .scrollable-div{
-    margin-top: 45vh;
+    margin-top: 25vh;
 }
 
 .scrollable-div-last{
@@ -146,11 +155,17 @@ h1, h2, p{
 }
 .left-div{
     margin-left: 15vw;
-    /* margin-right: ; */
+    margin-right: calc(45vw - var(--scrollbar-width));;
 }
 .right-div{
-    margin-left: 45vw;
-    margin-right: calc(15vw - var(--scrollbar-width));
+    margin-left: 55vw;
+    margin-right: calc(5vw - var(--scrollbar-width));
+}
+
+.sticky-div{
+    position:sticky;
+    top: 50px;
+    
 }
 
 .table-div{
@@ -159,9 +174,9 @@ h1, h2, p{
 .table-row-div{
     display: table-row;
 }
-.table-cell-div{
+/* .table-cell-div{
     display: table-cell;
-}
+} */
 
 /* color stylings  */
 #berkeley-nature-div,
@@ -224,13 +239,15 @@ h1, h2, p{
 
 .vid-med,
 .img-med{
-    max-width: 30vw;
+    max-width: 40vw;
+    max-height: 60vh;
 }
 
 .img-small,
 .vid-small{
     padding: 5px;
     max-width: 20vw;
+    max-height: 20vh;
 }
 
 .img-grid{
@@ -240,17 +257,33 @@ h1, h2, p{
 /* img & vid effects */
 .sticky-vid{
     position: sticky;
-    top: 10px;
+    top: 0px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    width: calc(100vw - var(--scrollbar-width));
+    /* width: 100%; */
     z-index: 1;
+    /* filter: blur(5px); */
+}
+
+.img-bg{
+    width: calc(100vw - var(--scrollbar-width));
+}
+
+.sticky-img{
+    position: sticky;
+    top: 80px;
 }
 
 /* image & vid animations */
-.img-small{
+.img-modal{
     transition: 0.2s;
+    border: 2px solid aliceblue;
 }
 
-.img-small:hover{
+.img-modal:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 

@@ -9,12 +9,12 @@ export default function BotanicalGarden() {
         get_spec_images,
         AutoPlayLoopVid,
         SmallImage,
-        CaptionText,
+        flex_img_map
     } = useContext(BNContext);
 
 
     const botanical_garden_images = get_spec_images('Botanical Garden');
-
+    console.log('bgi', botanical_garden_images);
     return (
         <section className='scrollable-section'>
             <AutoPlayLoopVid classes="sticky-vid" vidSrc={vid_folder + "plant (2).mp4"} />
@@ -25,14 +25,15 @@ export default function BotanicalGarden() {
             <div className='scrollable-div red-div left-div'>
                 <p className='scrollable-p-graf'>I've only visited the garden once this year in the winter.
                     It was a brief visit, right before closing time,
-                    and there wasn't much that was blooming🌷🌼🌻.
+                    and there wasn't much that was blooming🌼.
                 </p>
             </div>
             <div className='scrollable-div red-div right-div'>
                 <p className='scrollable-p-graf'>
                     Even in the winter, the relatively "regular" garden, still had it's own allure.
                 </p>
-                <p className='scrollable-p-graf'>
+                <SmallImage fileName={img_folder + 'plant (28).JPG'} />
+                <p className='scrollable-p-graf' style={{ fontSize: 'small' }}>
                     It was like seeing professional athletes in the offseason,
                     or actors backstage after the play.
                     It was an enjoyable visit nonetheless.
@@ -53,10 +54,7 @@ export default function BotanicalGarden() {
                         I still got some decent pictures though from the 30 minutes I was there.
                     </p>
                 </div>
-                {botanical_garden_images.map(i =>
-                    <SmallImage fileName={img_folder + i} />
-                    // <SmallImage fileName={require('' + img_folder + i)} />
-                )}
+                {flex_img_map(botanical_garden_images)}
             </div>
         </section>
 

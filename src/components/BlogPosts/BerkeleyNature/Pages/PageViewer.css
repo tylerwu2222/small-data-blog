@@ -4,12 +4,19 @@
 
 
 /* next-prev arrows */
+.navigation-caret{
+    width: 2vw;
+    height: auto;
+}
+
 .carousel-prev-arrow,
-.carousel-next-arrow{
+.carousel-next-arrow,
+.scroll-down-caret{
     position:sticky;
     top: 50%;
     width: fit-content;
-
+    margin: 0px;
+    
     z-index: 3;
     background-color: rgb(66, 66, 66);
     opacity: 80%;
@@ -23,6 +30,12 @@
     cursor: pointer;
     opacity: 100%;
     transform: scale(1.2);
+}
+
+.scroll-down-caret{
+    /* background-color: transparent; */
+    /* bottom: 1%; */
+    left: 50%;
 }
 
 .carousel-prev-arrow>p,
