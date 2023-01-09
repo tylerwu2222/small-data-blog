@@ -1,42 +1,33 @@
-import { render } from "@testing-library/react";
 import * as d3 from "d3";
 
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import TNDContext from "./TNDContext";
 
 
-const SVG1 = () => {
+// const SVG1 = ({ data, view='relative' }) => {
+const SVG1 = ({ data, view = 'absolute' }) => {
+    console.log('svg1 init data', data);
     const {
         config,
-        dropdownMenu,
-        album_data,
-        album_data1
+        DropdownMenu
     } = useContext(TNDContext);
-    console.log('config', config);
 
     const stats1 = ['All years'].concat([...Array(10).keys()].map(yr => yr + 2012));
-    let stat1 = stats1[0];
 
-    const onStat1Clicked = selection => {
-        stat1 = selection;
-        render_s1(stat1)
+    const onStat1Clicked = (event, child) => {
+        console.log('new value', event.target.value)
+        // setStat1(event.target.value);
+        render_s1(event.target.value);
     };
 
     // initial render
-    // useEffect(() => {
-    //     render_s1(stat1);
-    // }, []);
-
-    d3.select('#stats-menu1')
-        .call(dropdownMenu, {
-            options: stats1,
-            onOptionClicked: onStat1Clicked,
-            selectedOption: stat1,
-            label: 'Sort by: '
-        });
+    useEffect(() => {
+        render_s1(stats1[0]);
+    }, []);
 
     // annual review scores
     const render_s1 = (stat) => {
+        // console.log('new render', stat);
         const t = d3.transition().duration(config.anim_speed).ease(d3.easeCubic);
         let svg1 = d3.select("#stat-svg1");
         svg1
@@ -45,19 +36,23 @@ const SVG1 = () => {
             .style("height", config.vh + 'px');
 
         // filter data by year
+        let filtered_data;
         if (stat[0] == "2") {
-            album_data1 = album_data.filter(function (a) {
+            filtered_data = data.filter(function (a) {
                 return a.Year == +stat;
-            });
+            })
+            // );
         }
         else {
-            album_data1 = album_data;
+            filtered_data = data;
         }
 
         // render hist
-        let scores = album_data1.map(a => a.Score);
-        let min = Math.min(...scores);
-        let max = Math.max(...scores);
+        let scores = filtered_data.map(a => a.Score);
+        // let min = Math.min(...scores);
+        const min = -1;
+        const max = 10;
+        // let max = Math.max(...scores);
         let domain = [min, max];
         let xScale = d3.scaleLinear()
             .domain(domain)
@@ -82,24 +77,38 @@ const SVG1 = () => {
             .attr("x", config.vw / 2)
             .attr("y", config.vh - 10)
             .text('Score');
+
         // y axis
+        let yMax;
+        if (view === 'relative') {
+            yMax = d3.max(bins, d => d.length);
+        }
+        else {
+            if (stat[0] == "A") {
+                yMax = 500;
+            }
+            else {
+                yMax = 70;
+            }
+        }
         let yScale = d3.scaleLinear()
             .range([config.inner_vh, config.vh - config.inner_vh])
-            .domain([0, d3.max(bins, d => d.length)]);
+            .domain([0, yMax]);
+
         const yAxis = d3.axisLeft().scale(yScale);
         svg1.append("g").attr('class', 'yaxis');
         svg1.select('g.yaxis')
             .attr("transform", "translate(" + (config.vw - config.inner_vw) + ",0)")
             .transition(t)
             .call(yAxis);
-        // const yLabel = svg1.append("text")
-        //     .attr("class", "ylabel");
-        // svg1.select('.ylabel')
-        //     .attr("text-anchor", "middle")
-        //     .attr("x", (-config.vh / 2))
-        //     .attr("y", 20)
-        //     .attr("transform", "rotate(-90)")
-        //     .text('Number of Reviews');
+        const yLabel = svg1.append("text")
+            .attr("class", "ylabel");
+        svg1.select('.ylabel')
+            .attr("text-anchor", "middle")
+            .attr("x", (-config.vh / 2))
+            .attr("y", 20)
+            .attr("transform", "rotate(-90)")
+            .text('Number of Reviews');
 
         // add bars
         svg1.selectAll("rect")
@@ -108,14 +117,17 @@ const SVG1 = () => {
                 enter => enter.append("rect")
                     .attr("x", d => xScale(d.x0 - 0.5))
                     .attr("y", config.inner_vh)
+                    .attr("width", function (d) {
+                        return xScale(d.x1) - xScale(d.x0) - 2;
+                    })
                     .call(enter => enter.transition(t)
                         .attr("fill", config.color1)
                         .attr("stroke", config.stroke1)
                         .attr("x", d => xScale(d.x0 - 0.5))
                         .attr("y", d => yScale(d.length))
-                        .attr("width", function (d) {
-                            return xScale(d.x1) - xScale(d.x0) - 2;
-                        })
+                        // .attr("width", function (d) {
+                        //     return xScale(d.x1) - xScale(d.x0) - 2;
+                        // })
                         .attr("height", function (d) {
                             return yScale(0) - yScale(d.length);
                         })
@@ -141,10 +153,14 @@ const SVG1 = () => {
 
     return (
         <>
+            {/* <DropdownMenu label='Year' options={stats1} maxWidth={300} color = {config.stroke1}/> */}
+            <DropdownMenu label='Year' options={stats1} maxWidth={300} color={config.color1} handleChange={e => { onStat1Clicked(e) }} />
             <svg id="stat-svg1">
             </svg>
         </>
     )
 }
+
+
 
 export default SVG1;

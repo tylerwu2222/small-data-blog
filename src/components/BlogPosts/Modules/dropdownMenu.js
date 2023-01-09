@@ -1,36 +1,38 @@
-const dropdownMenu = (selection,props) => {
-    const {
-        options,
-        onOptionClicked,
-        selectedOption,
-        label
-    } = props; // destructure/unpack props into options
-    
-    // create select elt
-    console.log(selection, props);
-    let select = selection.selectAll('select').data([null]);
-    select = select
-        .enter()
-        .append('label')
-            .attr('for',label)
-            // .style('display','inline')
-            .text(label)
-        .append('select')
-            .attr('id', label)
-            .attr('class','dropdown')
-        .merge(select)
-            .on('change', function(){ // when select changed...
-                onOptionClicked(this.value); // executes code in scatter_src
-            }); // enter/update
+import { Box, FormControl, InputLabel, NativeSelect } from '@mui/material';
+import Select from '@mui/material/Select';
 
-    // populate options data
-    const option = select.selectAll('option').data(options); 
-    option.enter().append('option')
-        .merge(option)
-            .attr('value', d => d)
-            .property('selected', d => d == selectedOption) // property sets attribute if fn true
-            .text(d => d);
-    option.exit().remove();
-};
+const DropdownMenu = ({ label = "Dropdown Label", options = [1, 2, 3], color = "#999", maxWidth = 300, handleChange }) => {
+    return (
+        <>
+            <Box sx={{ 
+                'minWidth': 120, 
+                'maxWidth': maxWidth,
+                '&.MuiFormLabel-root ':{
+                    color: color
+                },
+                '&.MuiNativeSelect-select ':{
+                    borderColor: color
+                } }}>
+                <FormControl fullWidth>
+                    <InputLabel variant="standard" htmlFor="uncontrolled-native">
+                        {label}
+                    </InputLabel>
+                    <NativeSelect
+                        defaultValue={options[0]}
+                        inputProps={{
+                            name: label,
+                            id: 'uncontrolled-native-' + label,
+                        }}
+                        onChange={handleChange}
+                    >
+                        {options.map(o => {
+                            return <option value={o}>{o}</option>
+                        })}
+                    </NativeSelect>
+                </FormControl>
+            </Box>
+        </>
+    )
+}
 
-export default dropdownMenu;
+export default DropdownMenu;
