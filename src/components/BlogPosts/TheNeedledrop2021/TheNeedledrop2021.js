@@ -181,6 +181,7 @@ const BlogContent = () => {
                 // setAlbumData1
             }}>
                 {/* <ThemeProvider theme={theme}> */}
+                <img src={'/img/thumbnails/blog_thumbnails/the_needledrop_2021.png'} className='post-main-img' alt='blog-post-thumbnail'></img>
                 <h2 id="section1" className="pres-header">Who is Anthony Fantano?</h2>
                 <p>For those of you who recognize this man above, but not from music reviews, it might be from this infamous audio clip:
                     <iframe className="post-vid" src="https://www.youtube.com/embed/HMKUlsJpov8">

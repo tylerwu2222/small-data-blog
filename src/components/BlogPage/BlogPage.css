@@ -1,6 +1,6 @@
 .post-main-img{
     display: block;
-    border-radius: 20px;
+    border: 0.1rem solid black;
     /* width: 40vw; */
     max-height: 70vh;
     width: auto;
