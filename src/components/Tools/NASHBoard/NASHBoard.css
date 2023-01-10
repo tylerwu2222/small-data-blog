@@ -18,7 +18,7 @@
 .NASHBoard-div{
     display: grid;
     grid-template-columns: 7fr 7fr 3fr min-content;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr auto;
     column-gap: 5px;
     padding: 10px;
 }
@@ -60,9 +60,16 @@
     grid-row-end: 3;
 } */
 
+.link-bibble-div{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
 .league-scoring-div{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
 }

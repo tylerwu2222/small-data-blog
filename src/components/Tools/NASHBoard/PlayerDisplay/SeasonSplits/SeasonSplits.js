@@ -30,7 +30,7 @@ const SeasonSplits = () => {
 
     const getCondensedSplits = (allSplits, year = '2022', type = 'average') => {
         const yearSplits = allSplits[year][type];
-        console.log('SPLITS',yearSplits);
+        // console.log('SPLITS',yearSplits);
         const subCategories = Object.keys(yearSplits).slice(0, 11).concat(Object.keys(yearSplits).slice(14, 20)).concat(Object.keys(yearSplits).slice(26, 34));
         const condensedSplits = Object.keys(yearSplits)
             .filter(key => subCategories.includes(key))
@@ -42,7 +42,7 @@ const SeasonSplits = () => {
         condensedSplits['games_played'] = Math.round(Math.random() * 20)
         condensedSplits['field_goals_missed'] = (condensedSplits['two_points_att'] + condensedSplits['three_points_att']) - (condensedSplits['two_points_made'] + condensedSplits['three_points_made']);
         condensedSplits['free_throws_missed'] = condensedSplits['free_throws_att'] - condensedSplits['free_throws_made']
-        console.log('CSPLITS', condensedSplits);
+        // console.log('CSPLITS', condensedSplits);
         return condensedSplits;
     }
 
@@ -63,14 +63,14 @@ const SeasonSplits = () => {
                 obj[key] = playersSplits[key];
                 return obj;
             }, {});
-        orderedStatline['tech'] = 0;
+        orderedStatline['technical_fouls'] = 0;
         // console.log('setting displayed player stat', orderedStatline);
         setDisplayedPlayerStatline(orderedStatline);
     }, [playersSplits]);
 
     // calculate fantasy score when player statline or league scoring changes
     useEffect(() => {
-        // console.log('statline', displayedPlayerStatline, Object.keys(displayedPlayerStatline).length);
+        // console.log('statline', displayedPlayerStatline);
         // console.log('statline/scoring changed')
         setDisplayedPlayerScore(() => calculateRussell(displayedPlayerStatline));
         // console.log('new score', displayedPlayerScore);

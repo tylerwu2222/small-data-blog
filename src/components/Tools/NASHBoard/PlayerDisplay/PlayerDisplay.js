@@ -4,6 +4,7 @@ import { PlayerContext } from '../NASHBoard';
 import GameCard from './GameCard/GameCard';
 import SeasonSplits from './SeasonSplits/SeasonSplits';
 import TeamTab from './TeamTab/TeamTab';
+import OppTeamStats from './OppTeamStats/OppTeamStats';
 
 import '../NASHBoard.css'
 import './PlayerDisplay.css'
@@ -40,9 +41,8 @@ const PlayerDisplay = () => {
         const initialValue = JSON.parse(saved);
         return initialValue;
     });
-
     const [removeButtonVisibility, setRemoveButtonVisibility] = useState(false);
-
+    const [numDisplayedGames,setNumDisplayedGames] = useState(displayedGames.length);
     // set injury status if in data
     let InjuryDiv;
     if (Object.keys(displayedPlayer['injury_status']).length > 0) {
@@ -75,7 +75,7 @@ const PlayerDisplay = () => {
         return current_games;
     };
 
-    // LOCAL STORAGE //
+    // MY TEAM (LOCAL STORAGE) //
     // initialize localStorage 
     useEffect(() => {
         let players = JSON.parse(localStorage.getItem("team"));
@@ -116,7 +116,12 @@ const PlayerDisplay = () => {
         }
     }, [displayedPlayer]);
 
-    // TEAM STUFF //
+    // team display tab
+    let teamTabs = myTeam ? Object.values(myTeam).map(p => {
+        return <TeamTab playerObject={p}></TeamTab>
+    }) : <></>;
+
+    // WEEKLY GAMES //
     // get weeks schedule based on team
     useEffect(() => {
         setDisplayedGames(getCurrentWeekGames(displayedTeam));
@@ -145,11 +150,10 @@ const PlayerDisplay = () => {
 
     }, [displayedPlayer]);
 
-    // team display tabs
-    let teamTabs = myTeam ? Object.values(myTeam).map(p => {
-        return <TeamTab playerObject={p}></TeamTab>
-    }) : <></>;
-
+    // update num games (for opp team stats table) when games change
+    useEffect(() => {
+        setNumDisplayedGames(displayedGames.length);
+    }, [displayedGames]);
 
     return (
         <div className="player-display-div">
@@ -162,7 +166,7 @@ const PlayerDisplay = () => {
                     <input type="button" title="Remove this player from your team :(" value="Remove Player" onClick={() => removePlayer()} className={removeButtonVisibility ? '' : 'hidden-btn'}></input>
                     <h4>{displayedPlayer['full_name']}</h4>
                     {/* <p>{displayedPlayer['id']}</p> */}
-                    <p><img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p>
+                    <p style={{margin:0}}><img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p>
                     {/* <p><img className="team-icon-img" src={require(teamImage)} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p> */}
                     <img className="displayed-player-img" src={require('../Data/player_headshots/' + displayedPlayer['id'] + '.jpg')} alt={displayedPlayer['id'] + ".jpg"}></img>
                 </div>
@@ -172,6 +176,9 @@ const PlayerDisplay = () => {
             </div>
             <div className='game-cards-div'>
                 <GameCard />
+            {/* </div>
+            <div className='opp-team-stats-div'> */}
+                <OppTeamStats/>
             </div>
             {InjuryDiv}
         </div>

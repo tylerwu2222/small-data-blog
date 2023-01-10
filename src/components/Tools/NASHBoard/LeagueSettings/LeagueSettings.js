@@ -16,6 +16,22 @@ const sample_statline = {
     'flagrant': 0
 };
 
+const stats_full_names = ['points',
+    'rebounds',
+    'assists',
+    'steals',
+    'blocks',
+    'field_goals_missed',
+    'free_throws_missed',
+    'turnovers',
+    'personal_fouls',
+    'technical_fouls',
+    'flagrant_fouls']
+const stats_abbreviated_names = Object.keys(sample_statline);
+
+let stat_abbreviation_dict = {}
+stats_full_names.forEach((key, i) => stat_abbreviation_dict[key] = stats_abbreviated_names[i]);
+
 const LeagueSettings = () => {
     const { leagueScoring, setLeagueScoring, calculateRussell } = useContext(PlayerContext);
     const [sampleStatline, setSampleStatline] = useState(sample_statline);
@@ -24,7 +40,11 @@ const LeagueSettings = () => {
 
     // update sample fantasy score when league scoring or sample statline changes
     useEffect(() => {
-        setSampleFantasyScore(calculateRussell(sampleStatline));
+        let full_name_statline = {}
+        stats_full_names.forEach(key => full_name_statline[key] = sampleStatline[stat_abbreviation_dict[key]])
+        // console.log('FNS',full_name_statline);
+        setSampleFantasyScore(calculateRussell(full_name_statline));
+        // setSampleFantasyScore(calculateRussell(sampleStatline));
         // console.log('sample statline',sampleStatline, Object.keys(sampleStatline).length);
         // console.log('sample score updated');
     }, [leagueScoring, sampleStatline]);
@@ -62,23 +82,23 @@ const LeagueSettings = () => {
             <div className='sample-statline-div'>
                 <div className='statline-label-div'>
                     {Object.keys(sampleStatline).map(stat => {
-                            if (['ast', 'blk', 'ft miss', 'foul'].includes(stat)) {
+                        if (['ast', 'blk', 'ft miss', 'foul'].includes(stat)) {
                             return (
-                            <>
-                                <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}</label>
-                                {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
-                                <br />
-                            </>
+                                <>
+                                    <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}</label>
+                                    {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
+                                    <br />
+                                </>
                             )
                         }
-                            else {
+                        else {
                             return (
-                            <>
-                                <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}/</label>
-                                {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
-                            </>
+                                <>
+                                    <label className='sample-statline-label' htmlFor={'sample-' + stat + '-input'}>{stat}/</label>
+                                    {/* <input className='sample-statline-input' id={'sample-' + stat + '-input'} type='text' defaultValue={sampleStatline[stat]} maxLength={3} width={'5px'} onChange={(e) => { updateSampleStatline(e.target.value, stat) }}></input> */}
+                                </>
                             )
-                            }
+                        }
                     })}
 
                 </div>

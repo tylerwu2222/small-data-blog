@@ -72,7 +72,7 @@ const SearchPlayer = () => {
     // SORT & FILTER //
     const getCondensedSplits = (allSplits, year = '2022', type = 'average') => {
         const yearSplits = allSplits[year][type];
-        console.log('SPSPLITS',yearSplits);
+        // console.log('SPSPLITS',yearSplits);
         const subCategories = Object.keys(yearSplits).slice(0, 11).concat(Object.keys(yearSplits).slice(14, 20)).concat(Object.keys(yearSplits).slice(26, 34));
         const condensedSplits = Object.keys(yearSplits)
             .filter(key => subCategories.includes(key))

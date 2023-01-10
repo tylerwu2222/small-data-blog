@@ -6,7 +6,8 @@ import './GameCard.css'
 
 const GameCard = () => {
     const {
-        displayedGames, setDisplayedGames,
+        displayedGames, 
+        // setDisplayedGames,
         displayedTeam,
         opponentStats, setOpponentStats
     } = useContext(PlayerContext);
@@ -22,7 +23,7 @@ const GameCard = () => {
         let opponent = displayedTeam == g.home ? g.away : g.home;
         let homeAway = displayedTeam == g.home ? 'Home' : 'Away';
         return (
-            <div key={i} className='game-card-div' onClick={() => showTeamStats(opponent)}>
+            <div key={i} className='game-card-div'>
                 {/* <p>Opponent: {opponent}</p> */}
                 <p className='home-away-p'>{homeAway}</p>
                 <img className="game-card-team-icon-img" src={require('../../Data/team_logos/' + opponent + ".jpg")} alt={opponent + ".jpg"}></img>
