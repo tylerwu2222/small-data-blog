@@ -8,8 +8,8 @@
 
 .game-card-div {
     flex: 2 1 21%;
-    max-width: 7vw;
-    max-height: 7vw;
+    max-width: 4vw;
+    max-height: 4vw;
     /* vertical-align: middle; */
     text-align: center;
     border-radius: 10px;
@@ -32,8 +32,8 @@
 
 /* team icons */
 .game-card-team-icon-img{
-    max-height: 5vw;
-    max-width: 5vw;
+    max-height: 3vw;
+    max-width: 3vw;
     
     margin: auto;
     display: block;

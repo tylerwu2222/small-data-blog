@@ -1,8 +1,10 @@
 import './NASHBoard.css'
 import { useState, useEffect, createContext } from "react";
 
-// update every week
+// update every day
 import injuries from './Data/injuries.json';
+
+// update every week
 import allPlayerSplits from './Data/player_splits.json';
 import currentSeasonSchedule from './Data/season_2022_schedule.json'
 import remainingSeasonSchedule from './Data/season_2022_remaining_schedule.json'
@@ -45,7 +47,7 @@ const DashBoard = () => {
     // console.log('rostered',Object.keys(allPlayersDictSportRadar))
     // filter out unrostered players
     const allPlayersDict = allPlayersDictRaw
-    .filter( p => Object.keys(allPlayersDictSportRadar).includes(p['full_name']));
+        .filter(p => Object.keys(allPlayersDictSportRadar).includes(p['full_name']));
 
     // console.log('APD',allPlayersDict);
     const [matchedPlayers, setMatchedPlayers] = useState(allPlayersDict);
@@ -62,7 +64,7 @@ const DashBoard = () => {
     const [displayedGames, setDisplayedGames] = useState('');
     const [displayedTeam, setDisplayedTeam] = useState('Los Angeles Lakers');
     const [leagueScoring, setLeagueScoring] = useState(league_scoring);
-    const [todaysDate, setTodaysDate] = useState('12/09/22');
+    const [todaysDate, setTodaysDate] = useState('1/10/23');
     const [opponentStats, setOpponentStats] = useState('');
 
     const calculateRussell = (statline, scoring = leagueScoring) => {
@@ -70,9 +72,15 @@ const DashBoard = () => {
         let runningScore = 0
         // let stat_vals = Object.values(statline);
         league_scoring_stats.forEach(
-        // league_scoring_vals.forEach(
+            // league_scoring_vals.forEach(
             d => {
-                let score = scoring[d] * statline[d];
+                let score;
+                if (d == 'technical_fouls') {
+                    score = 0;
+                }
+                else {
+                    score = scoring[d] * statline[d];
+                }
                 // console.log('stat prod',d,scoring[d],statline[d])
                 runningScore += score;
             }
@@ -102,7 +110,10 @@ const DashBoard = () => {
             <div className='NASHBoard-div'>
                 <div className='my-team-div'>
                     <div className='NASHBoard-title-div'>
-                        <p className='NASHBoard-title'><span title='NASH = Not All Stars Here' style={{ fontSize: 'larger', fontWeight: 700 }}>NASHBoard </span><span style={{ fontSize: 'smaller' }}>Last updated: {todaysDate}</span></p>
+                        <p className='NASHBoard-title'>
+                            <span title='NASH = Not All Stars Here' style={{ fontSize: 'larger', fontWeight: 700 }}>NASHBoard </span>
+                            <span style={{ fontSize: 'smaller' }}>Last updated: {todaysDate}</span>
+                        </p>
                     </div>
                     <PlayerDisplay />
                 </div>

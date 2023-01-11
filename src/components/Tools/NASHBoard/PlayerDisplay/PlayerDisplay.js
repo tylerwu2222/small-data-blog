@@ -8,6 +8,7 @@ import OppTeamStats from './OppTeamStats/OppTeamStats';
 
 import '../NASHBoard.css'
 import './PlayerDisplay.css'
+import { local } from 'd3';
 
 // fantasy week starts on monday, so +1 to all dates
 const getCurrentWeek = () => {
@@ -15,15 +16,18 @@ const getCurrentWeek = () => {
     // first day of week = current day (1-31) - day of week (0-6) [0 is Sunday]
     let first = curr.getDate() - curr.getDay() + 1;
     let last = first + 6; // last day is the first day + 6
-
     let lastday = new Date(curr.setDate(last)).toISOString().split('T')[0];
     let firstday = new Date(curr.setDate(first)).toISOString().split('T')[0];
     // console.log('days', firstday, lastday);
     return [firstday, lastday];
 };
 
+// pass two datestrings, compare dates
 const isBetweenDates = (range, date) => {
-    return date > range[0] & date <= range[1];
+    const localDate = new Date(new Date(date).toLocaleString());
+    // console.log('is between',new Date(range[0]),new Date(new Date(range[1]).setHours(23)))
+    // console.log('date',localDate);
+    return localDate >= new Date(range[0]) & localDate <= new Date(new Date(range[1]).setHours(23));
 }
 
 const PlayerDisplay = () => {
@@ -66,11 +70,14 @@ const PlayerDisplay = () => {
 
         // get current week
         let current_week = getCurrentWeek();
+        // console.log('cw',current_week);
         // get games in span
         const last_5 = played_games.slice(-5);
-        const current_games_played = last_5.filter(g => isBetweenDates(current_week, g['scheduled'].split('T')[0]));
+        // const current_games_played = last_5.filter(g => isBetweenDates(current_week, new Date(g['scheduled'])));
+        const current_games_played = last_5.filter(g => isBetweenDates(current_week, g['scheduled']));
         const next_5 = future_games.slice(0, 5);
-        const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, g['scheduled'].split('T')[0]));
+        // const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, new Date(g['scheduled']).split('T')[0]));
+        const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, g['scheduled']));
         const current_games = current_games_played.concat(current_games_remaining);
         return current_games;
     };
@@ -175,7 +182,7 @@ const PlayerDisplay = () => {
                 <SeasonSplits />
             </div>
             <div className='game-cards-div'>
-                <GameCard />
+                {/* <GameCard /> */}
             {/* </div>
             <div className='opp-team-stats-div'> */}
                 <OppTeamStats/>

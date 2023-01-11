@@ -81,7 +81,7 @@ const SearchPlayer = () => {
                 return obj;
             }, {});
         // TESTING WITH RANDOM NUMBER GAMES PLAYED
-        condensedSplits['games_played'] = Math.round(Math.random() * 20);
+        condensedSplits['games_played'] = allSplits[year]['total']['games_played'];
         condensedSplits['field_goals_missed'] = (condensedSplits['two_points_att'] + condensedSplits['three_points_att']) - (condensedSplits['two_points_made'] + condensedSplits['three_points_made']);
         condensedSplits['free_throws_missed'] = condensedSplits['free_throws_att'] - condensedSplits['free_throws_made']
         // console.log('subcats', condensedSplits);
@@ -140,6 +140,7 @@ const SearchPlayer = () => {
         let playersSplits = allPlayersDict.map(p => getCondensedSplits(allPlayerSplits[p['full_name']]));
         let playerNames = allPlayersDict.map(p => p['full_name']);
         let playerGames = playersSplits.map(p => p['games_played']);
+
         let filterable = playerNames.map((n, i) => { return [n, playerGames[i]] });
         let filtered = filterable.filter(p => p[1] >= minGames)
         const filteredNames = filtered.map(a => a[0]);

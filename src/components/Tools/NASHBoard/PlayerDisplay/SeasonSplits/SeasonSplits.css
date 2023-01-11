@@ -6,7 +6,9 @@
 }
 
 .player-splits-flex{
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    /* border: 1px var(--main-text-color) solid; */
+    border: 1px black solid;
     padding: 5px;
     margin-right: 10px;
     background-color: var(--secondary-bg-color);

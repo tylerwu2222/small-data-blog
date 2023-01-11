@@ -6,14 +6,16 @@ export default function LinkBibble() {
     'pace': 'https://www.nba.com/stats/teams/advanced?LastNGames=5&dir=A&sort=PACE',
     'defense': 'https://www.nba.com/stats/teams/advanced?LastNGames=5&dir=D&sort=DEF_RATING',
     'assists allowed': 'https://www.teamrankings.com/nba/stat/opponent-assists-per-game',
-    'rebounds allowed': 'https://www.teamrankings.com/nba/stat/opponent-total-rebounds-per-game'
+    'rebounds allowed': 'https://www.teamrankings.com/nba/stat/opponent-total-rebounds-per-game',
+    'statmuse': 'https://www.statmuse.com/nba'
   }
 
   const linkTitleDict = {
     'pace': 'faster pace: good',
     'defense': 'bad defensive rating (larger number): good',
     'assists allowed': 'more assists allowed = good',
-    'rebounds allowed': 'more rebounds (especially offensive) allowed = good'
+    'rebounds allowed': 'more rebounds (especially offensive) allowed = good',
+    'statmuse': 'good for searching player\'s previous matchups'
   }
   return (
     <div className='link-container-div'>

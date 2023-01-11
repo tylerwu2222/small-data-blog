@@ -38,8 +38,9 @@ const SeasonSplits = () => {
                 obj[key] = yearSplits[key];
                 return obj;
             }, {});
+        // console.log('SPLITS',subCategories,condensedSplits)
         // TESTING WITH RANDOM NUMBER GAMES PLAYED
-        condensedSplits['games_played'] = Math.round(Math.random() * 20)
+        condensedSplits['games_played'] = allSplits[year]['total']['games_played'];
         condensedSplits['field_goals_missed'] = (condensedSplits['two_points_att'] + condensedSplits['three_points_att']) - (condensedSplits['two_points_made'] + condensedSplits['three_points_made']);
         condensedSplits['free_throws_missed'] = condensedSplits['free_throws_att'] - condensedSplits['free_throws_made']
         // console.log('CSPLITS', condensedSplits);

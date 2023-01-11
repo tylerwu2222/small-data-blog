@@ -1,0 +1,3 @@
+- add team pace to scripts
+- have scripts run automatically (injuries daily, schedule weekly)
+- fantasy journal sidebar? (or add notes directly to players)
