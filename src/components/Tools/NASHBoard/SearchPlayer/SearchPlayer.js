@@ -158,22 +158,29 @@ const SearchPlayer = () => {
 
     // SELECT //
     const handleSelectPlayer = (player) => {
-        // get injury status from injuries
-        let injury_status = injuries.filter(i => i['player_id'] == player.id);
-        if (injury_status.length >= 1) {
-            let injury = injury_status[0];
-            player['injury_status'] = {
-                'status': injury.status,
-                'injury_date': injury.start_date,
-                'injury_update': injury.update_date,
-                'injury_desc': injury.comment
-            };
-        }
-        else {
-            player['injury_status'] = {}
-        }
         setOpponentStats('');
-        return player;
+        const players = JSON.parse(localStorage.getItem("team"));
+        if(Object.keys(players).includes(player['full_name'])){
+            return players[player['full_name']];
+        }
+        else{
+            // get injury status from injuries
+            let injury_status = injuries.filter(i => i['player_id'] == player.id);
+            if (injury_status.length >= 1) {
+                let injury = injury_status[0];
+                player['injury_status'] = {
+                    'status': injury.status,
+                    'injury_date': injury.start_date,
+                    'injury_update': injury.update_date,
+                    'injury_desc': injury.comment
+                };
+            }
+            else {
+                player['injury_status'] = {}
+            }
+            return player;
+        }
+        
     };
 
     // {/* {

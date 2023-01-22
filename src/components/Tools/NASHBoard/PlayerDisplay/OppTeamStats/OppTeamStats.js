@@ -13,6 +13,7 @@ const displayed_stats_advanced = [
     'second_chance_pts', 'points_off_turnovers', 'fast_break_pts', 'bench_points',
     'assists', 'turnovers',
     'blocks',
+    'steals',
     'rebounds', 'def_rebounds', 'off_rebounds'];
 
 export default function OppTeamStats() {

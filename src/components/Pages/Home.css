@@ -3,3 +3,10 @@
 	color: var(--sdb-color);
 
 }
+
+.home-img{
+	border: black solid 1px;
+	margin: 0.3em;
+	max-height: 50vh;
+	max-width: 25vw;
+}

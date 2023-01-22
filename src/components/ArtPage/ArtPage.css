@@ -5,7 +5,8 @@
 }
 
 .art-piece{
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
+    border: black solid 1px;
     max-width: 60vh;
 }
 

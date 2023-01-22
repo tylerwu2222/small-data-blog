@@ -12,7 +12,14 @@ const TeamTab = ({playerObject}) => {
 
     // show player when clicked
     const showPlayer = () => {
-        setDisplayedPlayer(playerObject)
+        const players = JSON.parse(localStorage.getItem("team"));
+        if(Object.keys(players).includes(playerObject['full_name'])){
+            setDisplayedPlayer(players[playerObject['full_name']]);
+        }
+        else{
+            setDisplayedPlayer(playerObject)
+        // console.log('clicked player', playerObject);
+        }
     }
 
     return (

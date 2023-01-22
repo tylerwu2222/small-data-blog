@@ -41,7 +41,7 @@
 
 .blog-tn{
     transition: 0.3s ease-in-out;
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
 }
 
 
@@ -64,7 +64,8 @@
     max-width: 35vh;
     padding: 1em;
     margin: 1em;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
+    /* border: black solid 1px; */
 }
 
 .unhoverable-div,
@@ -79,7 +80,7 @@
 }
 
 .hoverable-div:hover{
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     border-width: 2px;
     border-style: solid;
     border-color: var(--sdb-color);

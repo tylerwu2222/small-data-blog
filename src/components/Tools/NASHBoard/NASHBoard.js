@@ -51,20 +51,27 @@ const DashBoard = () => {
 
     // console.log('APD',allPlayersDict);
     const [matchedPlayers, setMatchedPlayers] = useState(allPlayersDict);
-    const [displayedPlayer, setDisplayedPlayer] = useState({
+    const [myTeam, setMyTeam] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem("team");
+        const initialValue = JSON.parse(saved);
+        return (initialValue ? initialValue: {});
+    });
+    const [displayedPlayer, setDisplayedPlayer] = useState(Object.keys(myTeam).length > 0 ? myTeam[Object.keys(myTeam)[0]]:{
+    // const [displayedPlayer, setDisplayedPlayer] = useState({
         "id": 201566,
         "full_name": "Russell Westbrook",
         "first_name": "Russell",
         "last_name": "Westbrook",
         "is_active": true,
-        "injury_status": {
-
-        }
+        "injury_status": {},
+        "notes": {}
     });
+    const [displayedPlayerNotes, setDisplayedPlayerNotes] = useState('');
     const [displayedGames, setDisplayedGames] = useState('');
     const [displayedTeam, setDisplayedTeam] = useState('Los Angeles Lakers');
     const [leagueScoring, setLeagueScoring] = useState(league_scoring);
-    const [todaysDate, setTodaysDate] = useState('1/10/23');
+    const todaysDate = '1/15/23';
     const [opponentStats, setOpponentStats] = useState('');
 
     const calculateRussell = (statline, scoring = leagueScoring) => {
@@ -89,6 +96,10 @@ const DashBoard = () => {
         return Math.round(runningScore * 100) / 100;
     }
 
+    useEffect(() => {
+        document.title = 'small data blog | NASHBoard'
+      }, [])
+
     return (
         <PlayerContext.Provider value={{
             allPlayersDict,
@@ -99,7 +110,9 @@ const DashBoard = () => {
             injuries,
 
             matchedPlayers, setMatchedPlayers,
+            myTeam, setMyTeam,
             displayedPlayer, setDisplayedPlayer,
+            displayedPlayerNotes, setDisplayedPlayerNotes,
             displayedTeam, setDisplayedTeam,
             displayedGames, setDisplayedGames,
             opponentStats, setOpponentStats,

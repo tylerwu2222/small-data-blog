@@ -24,17 +24,6 @@ import BlogPostsData from '../../site_data/blog_posts.json'
 import TutorialsData from '../../site_data/tutorials.json'
 import ToolsData from '../../site_data/tools.json'
 
-// subpages
-// berkeley nature
-// pages
-import Intro from "../BlogPosts/BerkeleyNature/Pages/Intro";
-import Marina from "../BlogPosts/BerkeleyNature/Pages/Marina.js";
-import BotanicalGarden from "../BlogPosts/BerkeleyNature/Pages/BotanicalGarden.js";
-import SFGarden from "../BlogPosts/BerkeleyNature/Pages/SFGarden.js";
-import Seattle from "../BlogPosts/BerkeleyNature/Pages/Seattle.js";
-import Berkeley from "../BlogPosts/BerkeleyNature/Pages/Berkeley.js";
-import Wrapped from "../BlogPosts/BerkeleyNature/Pages/Wrapped.js";
-
 const get_component_name = (name) => {
     let component_name = name.split("_"); // berk_nature --> [berk,nature]
     component_name = component_name.map(word => {

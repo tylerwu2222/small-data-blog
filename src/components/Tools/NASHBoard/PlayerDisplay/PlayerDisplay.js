@@ -5,6 +5,7 @@ import GameCard from './GameCard/GameCard';
 import SeasonSplits from './SeasonSplits/SeasonSplits';
 import TeamTab from './TeamTab/TeamTab';
 import OppTeamStats from './OppTeamStats/OppTeamStats';
+import InputDialog from '../../../Modules/InputDialog/InputDialog';
 
 import '../NASHBoard.css'
 import './PlayerDisplay.css'
@@ -32,21 +33,25 @@ const isBetweenDates = (range, date) => {
 
 const PlayerDisplay = () => {
     const {
+        myTeam, setMyTeam,
         displayedPlayer,
+        displayedPlayerNotes, setDisplayedPlayerNotes,
         displayedTeam, setDisplayedTeam,
         displayedGames, setDisplayedGames,
         teamsDict,
         currentSeasonSchedule, remainingSeasonSchedule
     } = useContext(PlayerContext);
 
-    const [myTeam, setMyTeam] = useState(() => {
-        // getting stored value
-        const saved = localStorage.getItem("team");
-        const initialValue = JSON.parse(saved);
-        return initialValue;
-    });
+    // const [myTeam, setMyTeam] = useState(() => {
+    //     // getting stored value
+    //     const saved = localStorage.getItem("team");
+    //     const initialValue = JSON.parse(saved);
+    //     return initialValue;
+    // });
+
     const [removeButtonVisibility, setRemoveButtonVisibility] = useState(false);
-    const [numDisplayedGames,setNumDisplayedGames] = useState(displayedGames.length);
+    const [numDisplayedGames, setNumDisplayedGames] = useState(displayedGames.length);
+    const [isOnTeam, setIsOnTeam] = useState(true);
     // set injury status if in data
     let InjuryDiv;
     if (Object.keys(displayedPlayer['injury_status']).length > 0) {
@@ -95,10 +100,12 @@ const PlayerDisplay = () => {
     const addPlayer = () => {
         // console.log('adding player to local storage');
         const players = JSON.parse(localStorage.getItem("team"));
+        displayedPlayer['notes'] = '' // init player notes value
         players[displayedPlayer['full_name']] = displayedPlayer;
         localStorage.setItem('team', JSON.stringify(players));
         setMyTeam(JSON.parse(localStorage.getItem("team")));
         setRemoveButtonVisibility(true);
+        // console.log('first player',myTeam[Object.keys(myTeam)[0]]);
     };
 
     const removePlayer = () => {
@@ -108,6 +115,37 @@ const PlayerDisplay = () => {
         setMyTeam(JSON.parse(localStorage.getItem("team")));
         setRemoveButtonVisibility(false);
     };
+
+    // change note taking button visiblity when displayed player changes
+    useEffect(() => {
+        setIsOnTeam(Object.keys(myTeam).includes(displayedPlayer['full_name']));
+    }, [displayedPlayer]);
+
+    // handle changing displayed player notes
+    const handleDisplayedNotesChange = (value = 'displayed notes') => {
+        console.log('changing displayed player notes',value);
+        setDisplayedPlayerNotes(value);
+    }
+
+    // when displayed player notes changes --> if team size > 0, update notes for displayed player
+    useEffect(() => {
+        const players = JSON.parse(localStorage.getItem("team"));
+        if (Object.keys(players).length > 0){
+        // console.log(JSON.parse(localStorage.getItem("team")))
+            players[displayedPlayer['full_name']]['notes'] = displayedPlayerNotes;
+            console.log('players',players);
+            localStorage.setItem('team', JSON.stringify(players));
+        }
+    }, [displayedPlayerNotes]);
+    
+    // update player notes when displayedPlayer changes
+    useEffect(() => {
+        const players = JSON.parse(localStorage.getItem("team"));
+        if (Object.keys(players).includes(displayedPlayer['full_name'])){
+            console.log('setting notes to',displayedPlayer['full_name'], displayedPlayer['notes']);
+            setDisplayedPlayerNotes(displayedPlayer['notes']);
+        }
+    }, [displayedPlayer]);
 
     // make remove button visible if on team
     useEffect(() => {
@@ -169,13 +207,23 @@ const PlayerDisplay = () => {
                     {teamTabs}
                 </div>
                 <div className='profile-displayed-div'>
-                    <input type="button" className="add-player-btn" title="Add this player to your team!" value="Add Player" onClick={() => addPlayer()}></input>
+                    <input type="button" title="Add this player to your team!" value="Add Player" onClick={() => addPlayer()} className={removeButtonVisibility ? 'add-player-btn hidden-btn': 'add-player-btn'}></input>
                     <input type="button" title="Remove this player from your team :(" value="Remove Player" onClick={() => removePlayer()} className={removeButtonVisibility ? '' : 'hidden-btn'}></input>
                     <h4>{displayedPlayer['full_name']}</h4>
-                    {/* <p>{displayedPlayer['id']}</p> */}
-                    <p style={{margin:0}}><img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p>
+                    <p style={{ margin: 0 }}>
+                        <img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}>
+                        </img>{displayedTeam}</p>
                     {/* <p><img className="team-icon-img" src={require(teamImage)} alt={displayedTeam + ".jpg"}></img>{displayedTeam}</p> */}
                     <img className="displayed-player-img" src={require('../Data/player_headshots/' + displayedPlayer['id'] + '.jpg')} alt={displayedPlayer['id'] + ".jpg"}></img>
+                    <InputDialog
+                        buttonText={'Add Notes'}
+                        dialogTitle={displayedPlayer['full_name']}
+                        descriptionText={<><p style={{ fontSize: 'smaller' }}>- Press enter to add a new line</p><p style={{ fontSize: 'smaller' }}>- Press tab on a new line to indent</p></>}
+                        dialogLabel={'Notes'}
+                        // dialogText={displayedPlayerNotes}
+                        handleChange={e => handleDisplayedNotesChange(e.target.value)}
+                        className={removeButtonVisibility ? '' : 'hidden-btn'}
+                    />
                 </div>
             </div>
             <div className='player-splits-div'>
@@ -183,9 +231,9 @@ const PlayerDisplay = () => {
             </div>
             <div className='game-cards-div'>
                 {/* <GameCard /> */}
-            {/* </div>
+                {/* </div>
             <div className='opp-team-stats-div'> */}
-                <OppTeamStats/>
+                <OppTeamStats />
             </div>
             {InjuryDiv}
         </div>
