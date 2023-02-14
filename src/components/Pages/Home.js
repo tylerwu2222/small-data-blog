@@ -18,8 +18,8 @@ const Home = () => {
         <>
             <div className="container">
                 <p id="slogan" className="center center-text">
-                    In this blog I create and post my data-driven stories, art, tools, and tutorials focused on the more <i>minuté</i> topics. <br />
-                    Here are a few screenshots of the things I've made to get a taste.
+                    This is a blog where I create and post data-driven stories, art, tools, and tutorials focused on some random, small-ish topics. <br />
+                    Here are a few screenshots of the things I've made to get a taste:
                 </p>
                 {home_images.map(i => {
                     return (<img src={home_image_path + i + '.png'} className='home-img'></img>);

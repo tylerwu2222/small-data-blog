@@ -6,6 +6,7 @@ import SeasonSplits from './SeasonSplits/SeasonSplits';
 import TeamTab from './TeamTab/TeamTab';
 import OppTeamStats from './OppTeamStats/OppTeamStats';
 import InputDialog from '../../../Modules/InputDialog/InputDialog';
+import FantasyJournal from '../FantasyJournal/FantasyJournal';
 
 import '../NASHBoard.css'
 import './PlayerDisplay.css'
@@ -16,10 +17,11 @@ const getCurrentWeek = () => {
     let curr = new Date;
     // first day of week = current day (1-31) - day of week (0-6) [0 is Sunday]
     let first = curr.getDate() - curr.getDay() + 1;
-    let last = first + 6; // last day is the first day + 6
+    let last = first + 7; // last day is the first day + 7
     let lastday = new Date(curr.setDate(last)).toISOString().split('T')[0];
     let firstday = new Date(curr.setDate(first)).toISOString().split('T')[0];
-    // console.log('days', firstday, lastday);
+    // let firstday = '2023-01-30'; // temp fix
+    console.log('days', firstday, lastday);
     return [firstday, lastday];
 };
 
@@ -27,7 +29,6 @@ const getCurrentWeek = () => {
 const isBetweenDates = (range, date) => {
     const localDate = new Date(new Date(date).toLocaleString());
     // console.log('is between',new Date(range[0]),new Date(new Date(range[1]).setHours(23)))
-    // console.log('date',localDate);
     return localDate >= new Date(range[0]) & localDate <= new Date(new Date(range[1]).setHours(23));
 }
 
@@ -68,22 +69,26 @@ const PlayerDisplay = () => {
     }
 
     const getCurrentWeekGames = (teamName) => {
-        let played_games = currentSeasonSchedule.filter(game => game['home'] == teamName || game['away'] == teamName)
+        // let played_games = currentSeasonSchedule.filter(game => game['home'] == teamName || game['away'] == teamName)
         // console.log('p', played_games);
         let future_games = remainingSeasonSchedule.filter(game => game['home'] == teamName || game['away'] == teamName)
         // console.log('f', future_games);
 
         // get current week
         let current_week = getCurrentWeek();
-        // console.log('cw',current_week);
+
         // get games in span
-        const last_5 = played_games.slice(-5);
-        // const current_games_played = last_5.filter(g => isBetweenDates(current_week, new Date(g['scheduled'])));
-        const current_games_played = last_5.filter(g => isBetweenDates(current_week, g['scheduled']));
-        const next_5 = future_games.slice(0, 5);
-        // const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, new Date(g['scheduled']).split('T')[0]));
-        const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, g['scheduled']));
-        const current_games = current_games_played.concat(current_games_remaining);
+        // const last_5 = played_games.slice(-5);
+        // const current_games_played = last_5.filter(g => isBetweenDates(current_week, g['scheduled']));
+        // const next_5 = future_games.slice(0, 5);
+        // const current_games_remaining = next_5.filter(g => isBetweenDates(current_week, g['scheduled']));
+        // const current_games = current_games_played.concat(current_games_remaining);
+
+        // easier, lazier, but less efficient way
+        const current_games = future_games.filter(g => {
+            // console.log(g);
+            return isBetweenDates(current_week, g['scheduled'])
+        });
         return current_games;
     };
 
@@ -123,26 +128,26 @@ const PlayerDisplay = () => {
 
     // handle changing displayed player notes
     const handleDisplayedNotesChange = (value = 'displayed notes') => {
-        console.log('changing displayed player notes',value);
+        console.log('changing displayed player notes', value);
         setDisplayedPlayerNotes(value);
     }
 
     // when displayed player notes changes --> if team size > 0, update notes for displayed player
     useEffect(() => {
         const players = JSON.parse(localStorage.getItem("team"));
-        if (Object.keys(players).length > 0){
-        // console.log(JSON.parse(localStorage.getItem("team")))
+        if (Object.keys(players).length > 0) {
+            // console.log(JSON.parse(localStorage.getItem("team")))
             players[displayedPlayer['full_name']]['notes'] = displayedPlayerNotes;
-            console.log('players',players);
+            console.log('players', players);
             localStorage.setItem('team', JSON.stringify(players));
         }
     }, [displayedPlayerNotes]);
-    
+
     // update player notes when displayedPlayer changes
     useEffect(() => {
         const players = JSON.parse(localStorage.getItem("team"));
-        if (Object.keys(players).includes(displayedPlayer['full_name'])){
-            console.log('setting notes to',displayedPlayer['full_name'], displayedPlayer['notes']);
+        if (Object.keys(players).includes(displayedPlayer['full_name'])) {
+            console.log('setting notes to', displayedPlayer['full_name'], displayedPlayer['notes']);
             setDisplayedPlayerNotes(displayedPlayer['notes']);
         }
     }, [displayedPlayer]);
@@ -207,8 +212,9 @@ const PlayerDisplay = () => {
                     {teamTabs}
                 </div>
                 <div className='profile-displayed-div'>
-                    <input type="button" title="Add this player to your team!" value="Add Player" onClick={() => addPlayer()} className={removeButtonVisibility ? 'add-player-btn hidden-btn': 'add-player-btn'}></input>
+                    <input type="button" title="Add this player to your team!" value="Add Player" onClick={() => addPlayer()} className={removeButtonVisibility ? 'add-player-btn hidden-btn' : 'add-player-btn'}></input>
                     <input type="button" title="Remove this player from your team :(" value="Remove Player" onClick={() => removePlayer()} className={removeButtonVisibility ? '' : 'hidden-btn'}></input>
+
                     <h4>{displayedPlayer['full_name']}</h4>
                     <p style={{ margin: 0 }}>
                         <img className="team-icon-img" src={require('../Data/team_logos/' + displayedTeam + '.jpg')} alt={displayedTeam + ".jpg"}>
@@ -227,6 +233,7 @@ const PlayerDisplay = () => {
                 </div>
             </div>
             <div className='player-splits-div'>
+                <FantasyJournal className={removeButtonVisibility ? '' : 'hidden-btn'}/>
                 <SeasonSplits />
             </div>
             <div className='game-cards-div'>

@@ -3,6 +3,10 @@
 # my stuff
 api_keys.json
 
+# excluded data/code
+/Tools
+/ToolPage
+
 # dependencies
 /node_modules
 /.pnp

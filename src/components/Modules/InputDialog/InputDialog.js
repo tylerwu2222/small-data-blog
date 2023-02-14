@@ -1,4 +1,4 @@
-import {useState, useContext, forwardRef} from 'react';
+import { useState, useContext, forwardRef } from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -6,38 +6,26 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
-import { styled } from '@mui/material/styles';
-import Stack from '@mui/material/Stack';
-import { purple } from '@mui/material/colors';
+import CustomButton from '../CustomButton/CustomButton';
 
 import { PlayerContext } from '../../Tools/NASHBoard/NASHBoard';
 
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const ColorButton = styled(Button)(({ theme }) => ({
-    // color: theme.palette.getContrastText(purple[500]),
-    color: '#000',
-    backgroundColor: '#EFEFEF',
-    '&:hover': {
-      backgroundColor: '#E5E5E5',
-    },
-    border: 'black solid 1px',
-    textTransform: 'none'
-  }));
-
-export default function InputDialog({ 
-    buttonText = 'open dialog', 
-    dialogTitle = 'dialog title', 
-    descriptionText = 'type in the dialog', 
+export default function InputDialog({
+    buttonText = 'open dialog',
+    dialogTitle = 'dialog title',
+    descriptionText = 'type in the dialog',
     dialogLabel = 'Notes',
     className = className,
     // dialogText = '',
-    handleChange = () => {},
+    handleChange = () => { },
+    viewOnly = false,
+    passedNotes = ''
 }) {
     const {
         displayedPlayerNotes
@@ -55,9 +43,8 @@ export default function InputDialog({
 
     return (
         <div className={className}>
-            <ColorButton variant="contained" size="small" onClick={handleClickOpen} >
-                {buttonText}
-            </ColorButton>
+            <CustomButton variant="contained" size="small" onClick={handleClickOpen} buttonText={buttonText}>
+            </CustomButton>
             <Dialog
                 open={open}
                 TransitionComponent={Transition}
@@ -66,42 +53,43 @@ export default function InputDialog({
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
             >
-                <DialogTitle style={{paddingBottom:0}}>{dialogTitle}</DialogTitle>
+                <DialogTitle style={{ paddingBottom: 0 }}>{dialogTitle}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-slide-description">
                         {descriptionText}
                     </DialogContentText>
                     <TextField
+                        style={{ display: viewOnly ? 'none' : 'block' }}
                         id="outlined-multiline-flexible"
                         label={dialogLabel}
                         multiline
                         fullWidth
                         rows={4}
                         // maxRows={16}
-                        value={displayedPlayerNotes} 
+                        value={viewOnly ? passedNotes : displayedPlayerNotes}
                         onChange={handleChange}
                         onKeyDown={(e) => {
                             const { value } = e.target;
-                        
+
                             if (e.key === 'Tab') {
-                              e.preventDefault();
-                        
-                              const cursorPosition = e.target.selectionStart;
-                              const cursorEndPosition = e.target.selectionEnd;
-                              const tab = '\t';
-                        
-                              e.target.value =
-                                value.substring(0, cursorPosition) +
-                                tab +
-                                value.substring(cursorEndPosition);
-                        
-                              // if you modify the value programmatically, the cursor is moved
-                              // to the end of the value, we need to reset it to the correct
-                              // position again
-                              e.target.selectionStart = cursorPosition + 1;
-                              e.target.selectionEnd = cursorPosition + 1;
+                                e.preventDefault();
+
+                                const cursorPosition = e.target.selectionStart;
+                                const cursorEndPosition = e.target.selectionEnd;
+                                const tab = '\t';
+
+                                e.target.value =
+                                    value.substring(0, cursorPosition) +
+                                    tab +
+                                    value.substring(cursorEndPosition);
+
+                                // if you modify the value programmatically, the cursor is moved
+                                // to the end of the value, we need to reset it to the correct
+                                // position again
+                                e.target.selectionStart = cursorPosition + 1;
+                                e.target.selectionEnd = cursorPosition + 1;
                             }
-                          }}
+                        }}
                     />
                 </DialogContent>
                 <DialogActions>

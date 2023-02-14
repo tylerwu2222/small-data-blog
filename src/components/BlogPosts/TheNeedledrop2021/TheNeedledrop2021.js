@@ -120,6 +120,8 @@ const BlogContent = () => {
                     return ({ Q1: Q1, median: median, Q3: Q3, IQR: IQR, mean: mean, var: variance, min0: min0, max0: max0, min: min, max: max, n: n, genre: genre })
                 }, d => d.Genre);
                 gbg_quantiles.delete('');
+                gbg_quantiles = Array.from(gbg_quantiles, ([name, value]) => ({ value })).map(g => g.value);
+                // console.log('TNDGBG',typeof gbg_quantiles,gbg_quantiles);
                 setAlbumData3Quantiles(gbg_quantiles);
 
                 // console.log('genres', albums_by_genre);

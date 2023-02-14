@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import TNDContext from "./TNDContext";
 import * as d3 from "d3";
+import { FormGroup, FormControlLabel, Checkbox } from '@mui/material/';
 
 import ConversionToReactMessage from "../../Modules/ConversionToReactMessage";
 
@@ -12,17 +13,14 @@ const cb_genres = [
 const graph_types = ['boxplots', 'individual points'];
 
 const SVG3 = ({ data, gbgQuantiles }) => {
-    console.log('svg3data', data);
     const {
         config
     } = useContext(TNDContext);
 
-    let annual_average = [], albums_by_genre = [], albums_by_artist = [], albums_by_genre_f = [], gbg_quantiles_f = [],
-        artist_average = [], artist_n = [], albums_by_artist_f = [], artists_f, gba_quantiles_f = [];
-    let gbg_quantiles, gba_quantiles, grouped_by_artist;
-
-    let checked_genres = cb_genres; // temp
-    let checked_graphs = ['boxplots'];
+    const [checkedGenres, setcheckedGenres] = useState(cb_genres);
+    const [checkedGraphs, setcheckedGraphs] = useState(graph_types[0]); // temporarily just boxplots
+    const [selectedQuantiles, setselectedQuantiles] = useState(gbgQuantiles);
+    const [AlbumsByGenre, setAlbumsByGenre] = useState([]);
 
     const stats3 = ['--Select--', 'Number of reviews', 'Median', 'Mean', "Variance"];
 
@@ -30,44 +28,45 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         render_s3(stats3[1]);
     }, []);
 
-    const update_genres = checked_genres => {
-        let albums_by_genre_f = [];
-        albums_by_genre.forEach(a => {
-            if (checked_genres.includes(a.Genre)) {
-                albums_by_genre_f.push(a);
+    const update_genres = checkedGenres => {
+        // let albums_by_genre_f = [];
+        AlbumsByGenre.forEach(a => {
+            if (checkedGenres.includes(a.Genre)) {
+                AlbumsByGenre.push(a);
             }
         });
-        let gbg_quantiles_f = [];
-        gbgQuantiles.forEach(g => {
+        let gbgQuantiles = [];
+        selectedQuantiles.forEach(g => {
             // console.log(g.genre);
-            if (checked_genres.includes(g.genre)) {
-                gbg_quantiles_f.push(g);
+            if (checkedGenres.includes(g.genre)) {
+                gbgQuantiles.push(g);
             }
         });
     };
 
     const render_s3 = (stat3) => {
+        console.log('svg3data', stat3, selectedQuantiles);
         // update genres
-        update_genres(checked_genres);
-        // sort remaining genres by criteria
+        update_genres(checkedGenres);
+        // sort filtered genres by criteria
         let sortable = [];
         if (stat3 == "Number of reviews") {
-            gbg_quantiles_f.forEach(g =>
+            selectedQuantiles.forEach(g =>
                 sortable.push([g.genre, g.n])
             );
         }
         else if (stat3 == 'Median') {
-            gbg_quantiles_f.forEach(g =>
+            selectedQuantiles.forEach(g =>
                 sortable.push([g.genre, g.median])
             );
         }
         else if (stat3 == 'Mean') {
-            gbg_quantiles_f.forEach(g =>
+            selectedQuantiles.forEach(g =>
                 sortable.push([g.genre, g.mean])
             );
         }
         else if (stat3 == 'Variance') {
-            gbg_quantiles_f.forEach(g =>
+            selectedQuantiles.forEach(g =>
                 sortable.push([g.genre, g.var])
             );
         }
@@ -76,12 +75,13 @@ const SVG3 = ({ data, gbgQuantiles }) => {
             return b[1] - a[1]; // descending
         });
 
-        console.log(sortable);
-        if (stat3 != '--Select--') {
-            checked_genres = sortable.map(s => s[0]);
-            console.log(checked_genres);
-        }
-        // console.log(checked_graphs)
+        console.log('sortable', sortable);
+        // if (stat3 != '--Select--') {
+        //     checkedGenres = sortable.map(s => s[0]);
+        //     console.log(checkedGenres);
+        // }
+
+        // console.log(checkedGraphs)
         const t = d3.transition().duration(config.anim_speed).ease(d3.easeCubic);
         var svg3 = d3.select('#stat-svg3');
         svg3
@@ -91,7 +91,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         // axes + scales
         var xScale = d3.scaleBand()
             .range([(config.vw - config.inner_vw * 0.95), config.inner_vw])
-            .domain(checked_genres)
+            .domain(checkedGenres)
             .paddingInner(1)
             .paddingOuter(.5)
         const xAxis = d3.axisBottom().scale(xScale);
@@ -138,7 +138,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         // vertical line
         svg3
             .selectAll(".boxplot-vert")
-            .data(gbg_quantiles_f, d => d.genre)
+            .data(selectedQuantiles, d => d.genre)
             .join(
                 enter => enter.append("line")
                     .attr("class", "boxplot-vert")
@@ -176,7 +176,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         var boxWidth = 20;
         svg3
             .selectAll("rect")
-            .data(gbg_quantiles_f, d => d.genre)
+            .data(selectedQuantiles, d => d.genre)
             .join(
                 enter => enter.append("rect")
                     .style('opacity', 0)
@@ -189,7 +189,10 @@ const SVG3 = ({ data, gbgQuantiles }) => {
                     .call(enter => enter.transition(t)
                         .style("opacity", 1)
                         .attr("y", d => { return (yScale(d.Q3)) })
-                        .attr("height", d => { return (yScale(d.Q1) - yScale(d.Q3)) })
+                        .attr("height", d => {
+                            console.log('Q1', d);
+                            return (yScale(d.Q1) - yScale(d.Q3))
+                        })
                     )
                 ,
                 update => update
@@ -213,7 +216,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         // median
         svg3
             .selectAll(".boxplot-median")
-            .data(gbg_quantiles_f, d => d.genre)
+            .data(selectedQuantiles, d => d.genre)
             .join(
                 enter => enter.append("line")
                     .style('opacity', 0)
@@ -248,8 +251,8 @@ const SVG3 = ({ data, gbgQuantiles }) => {
                         .remove())
             );
 
-        // console.log(checked_graphs);
-        if (!checked_graphs.includes('boxplots')) {
+        // console.log(checkedGraphs);
+        if (!checkedGraphs.includes('boxplots')) {
             // hide boxplots
             svg3.selectAll(".boxplot-vert")
                 .style("visibility", "hidden");
@@ -271,7 +274,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
         var jitterWidth = 10
         svg3
             .selectAll("circle")
-            .data(albums_by_genre_f, d => {
+            .data(AlbumsByGenre, d => {
                 return (d.Artists[0] + d.Album + d.Genre)
             })
             .join(
@@ -305,7 +308,7 @@ const SVG3 = ({ data, gbgQuantiles }) => {
                         .remove()
                     )
             )
-        if (!checked_graphs.includes('individual points')) {
+        if (!checkedGraphs.includes('individual points')) {
             svg3.selectAll(".boxplot-points-genre")
                 .style("visibility", "hidden");
         }
@@ -322,6 +325,22 @@ const SVG3 = ({ data, gbgQuantiles }) => {
             <div id="stats-menu3">
             </div>
             <div id="stats-menu3-btns">
+                <FormGroup sx={{ display: 'inline' }}>
+                    {cb_genres.map(g => {
+                    return <FormControlLabel
+                        control={
+                            <Checkbox 
+                                checked={true} 
+                                // onChange={handleGenreChecked} 
+                                name={g} />
+                        }
+                        label={g}
+                    />
+                    })}
+                    
+                </FormGroup>
+
+
                 <input id="select-all-btn" className="btn-type1" type="button" value="Select All" />
                 <input id="deselect-all-btn" className="btn-type1" type="button" value="Deselect All" />
             </div>

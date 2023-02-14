@@ -77,9 +77,9 @@ const NavBar = ({ page }) => {
                             <li>
                                 <Link to="/tutorials">tutorials</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/tools">tools</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link to="/about">about</Link>
                             </li>
@@ -92,7 +92,7 @@ const NavBar = ({ page }) => {
                     <Route exact path="/blog" element={<Blog />}></Route>
                     <Route exact path="/art" element={<Art />}></Route>
                     <Route exact path="/tutorials" element={<Tutorials />}></Route>
-                    <Route exact path="/tools" element={<Tools />}></Route>
+                    {/* <Route exact path="/tools" element={<Tools />}></Route> */}
                     <Route exact path="/about" element={<AboutMe />}></Route>
                     {
                         ArtsData.map(category => {

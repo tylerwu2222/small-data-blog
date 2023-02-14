@@ -1,6 +1,6 @@
 
 .player-splits-div{
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-end;
 }
