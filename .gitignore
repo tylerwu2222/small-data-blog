@@ -4,7 +4,7 @@
 api_keys.json
 
 # excluded data/code
-/Tools/NASHBoard/Data
+src/components/Tools/NASHBoard/Data
 /ToolPage
 
 # dependencies
